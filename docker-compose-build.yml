@@ -1,0 +1,7 @@
+version: '3.7'
+name: ${PROJECT_NAME}_docs
+services:
+  docs:
+    build:
+      context: .
+      dockerfile: Dockerfile.docs

@@ -1,0 +1,20 @@
+version: '3.7'
+name: ${PROJECT_NAME}_docs
+services:
+  docs:
+    hostname: docs
+    restart: always
+    image: ${DEPLOY_DOCKER_REGISTRY}${PROJECT_NAME}_docs
+    ports:
+      - 5173:5173
+    env_file: .env
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '10m'
+        max-file: '10'
+
+networks:
+  default:
+    name: ${PROJECT_NAME}
+    external: true
