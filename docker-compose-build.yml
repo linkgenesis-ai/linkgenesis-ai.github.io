@@ -1,5 +1,5 @@
 version: '3.7'
-name: ${PROJECT_NAME}_docs
+name: ${PROJECT_NAME}
 services:
   docs:
     build:
