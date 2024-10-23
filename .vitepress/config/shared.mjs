@@ -11,6 +11,9 @@ export const shared = defineConfig({
   cleanUrls: true,
   metaChunk: true,
 
+  // TODO: 샘플에서 링크가 죽어도 무시하도록 설정, 운영에서는 false로 변경
+  ignoreDeadLinks: true,
+
   markdown: {
     math: true,
     codeTransformers: [
