@@ -4,15 +4,15 @@ layout: home
 
 hero:
   name: "VLAD Ops"
-  text: "VLAD Ops online document"
-  tagline: My great project tagline
+  # text: "VLAD Ops online document"
+  tagline: VLAD Ops online document
   actions:
     - theme: brand
       text: Markdown Examples
       link: /markdown-examples
     - theme: alt
       text: API Examples
-      link: /api-examples
+      link: /docs/api-examples
 
 features:
   - title: Feature A
