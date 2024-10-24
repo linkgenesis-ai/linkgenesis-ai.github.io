@@ -47,12 +47,12 @@ export const ko = defineConfig({
 function nav() {
   return [
     {
-      text: '가이드',
+      text: '제품 가이드',
       link: '/guide/what-is-vladops',
       activeMatch: '/guide/'
     },
     {
-      text: '레퍼런스',
+      text: '개발자 문서',
       link: '/reference/site-config',
       activeMatch: '/reference/'
     },
@@ -66,7 +66,7 @@ function sidebarGuide() {
       collapsed: false,
       items: [
         {
-          text: 'VitePress란 무엇인가?',
+          text: 'VLAD Ops란 무엇인가?',
           link: 'what-is-vladops'
         },
         {
@@ -76,37 +76,145 @@ function sidebarGuide() {
       ]
     },
     {
-      text: '글쓰기',
+      text: '프로젝트',
       collapsed: false,
       items: [
         {
-          text: '마크다운 확장 기능',
-          link: 'markdown'
+          text: '프로젝트 생성',
+        },
+        {
+          text: '환경 설정',
+          items: [
+            {
+              text: '접근 권한'
+            },
+            {
+              text: '이미지 메타'
+            },
+            {
+              text: '어노테이션 타입'
+            },
+            {
+              text: '모델 타입'
+            },
+            {
+              text: '모델셋 타입'
+            },
+            {
+              text: '모델셋 배포 관리'
+            },
+            {
+              text: '불량 유형'
+            },
+            {
+              text: '서비스 위치'
+            },
+            {
+              text: '기타 설정'
+            },
+          ]
         },
       ]
     },
     {
-      text: '구성 & API 레퍼런스',
-      base: '/reference/',
-      link: 'site-config'
-    }
+      text: '데이터',
+      collapsed: false,
+      items: [
+        {
+          text: '데이터셋',
+        },
+        {
+          text: '데이터 업로드',
+        },
+        {
+          text: '데이터 다운로드',
+        }
+      ]
+    },
+    {
+      text: '레이블링',
+      collapsed: false,
+      items: [
+        {
+          text: '레이블링',
+        }
+      ]
+    },
+    {
+      text: '모델',
+      collapsed: false,
+      items: [
+        {
+          text: '학습 커널',
+        },
+        {
+          text: '모델 학습',
+        },
+        {
+          text: '모델 검증',
+        },
+        {
+          text: '모델 관리',
+        },
+      ]
+    },
+    {
+      text: '연동',
+      collapsed: false,
+      items: [
+        {
+          text: '모델셋',
+        },
+        {
+          text: '룰 파라미터',
+        },
+        {
+          text: 'DL 파라미터',
+        },
+        {
+          text: '배포 및 배포 현황',
+        },
+      ]
+    },
+    {
+      text: '서비스 상태',
+      collapsed: false,
+      items: [
+        {
+          text: '서비스 상태',
+        }
+      ]
+    },
   ]
 }
 
 function sidebarReference() {
   return [
     {
-      text: '레퍼런스',
+      text: '시작하기',
+      collapsed: false,
       items: [
-        { text: '사이트 구성', link: 'site-config' },
         {
-          text: '기본 테마',
-          base: '/ko/reference/default-theme-',
-          items: [
-            { text: '개요', link: 'config' },
-            { text: '네비게이션 바', link: 'nav' },
-          ]
+          text: '소개',
+        },
+        {
+          text: '프로젝트 키 확인하기',
         }
+      ]
+    },
+    {
+      text: '학습 커널',
+      items: [
+        { text: '개념'},
+        { text: '인터페이스'},
+      ]
+    },
+    {
+      text: '외부 시스템 연동',
+      items: [
+        { text: '개념'},
+        { text: '데이터'},
+        { text: '배포'},
       ]
     }
   ]
