@@ -9,6 +9,6 @@ export default defineConfig({
     // root: { label: 'English', ...en },
     // ko: { label: '한국어', ...ko }
     root: { label: '한국어', ...ko },
-    en: { label: 'English', ...en },
+    // en: { label: 'English', ...en },
   }
 })

@@ -8,26 +8,26 @@ hero:
   name: VLAD Ops
   text: Machine Learning Integrated Solutions
   tagline: A web-based integrated solution that enables systematic management from modeling, learning, distribution, monitoring, and operation.
-  actions:
-    - theme: brand
-      text: What is VLAD Ops?
-      link: /guide/what-is-vladops
-    - theme: alt
-      text: Quickstart
-      link: /guide/getting-started
+  # actions:
+  #   - theme: brand
+  #     text: What is VLAD Ops?
+  #     link: /en/guide/what-is-vladops
+  #   - theme: alt
+  #     text: Quickstart
+  #     link: /en/guide/getting-started
   # image:
   #   src: /vdls-large.png
   #   alt: VitePress
 
-features:
-  - title: 모델링
-    details: 라벨링, 데이터셋 관리, 모델 학습 및 검증, 학습 커널
-  - title: 파라미터 관리 및 모델 배포
-    details: 룰/딥러닝 파라미터 관리, 모델/파라메터 배포 현황
-  - title: 리포트
-    details: 판정 결과 리포트, 불량 결과 데이터 확인, 미검 및 과검 데이터 확인
-  - title: 운영
-    details: 공통 코드 관리, 어노테이션 타입 관리, 모델 및 모델셋 관리, 로그인 및 사용자 관리
+# features:
+#   - title: 모델링
+#     details: 라벨링, 데이터셋 관리, 모델 학습 및 검증, 학습 커널
+#   - title: 파라미터 관리 및 모델 배포
+#     details: 룰/딥러닝 파라미터 관리, 모델/파라메터 배포 현황
+#   - title: 리포트
+#     details: 판정 결과 리포트, 불량 결과 데이터 확인, 미검 및 과검 데이터 확인
+#   - title: 운영
+#     details: 공통 코드 관리, 어노테이션 타입 관리, 모델 및 모델셋 관리, 로그인 및 사용자 관리
 ---
 
 <style>

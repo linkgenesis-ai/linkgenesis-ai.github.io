@@ -26,16 +26,16 @@ export const en = defineConfig({
 
 function nav() {
   return [
-    {
-      text: 'Guide',
-      link: '/en/guide/what-is-vladops',
-      activeMatch: '/en/guide/'
-    },
-    {
-      text: 'Reference',
-      link: '/en/reference/site-config',
-      activeMatch: '/en/reference/'
-    },
+    // {
+    //   text: 'Guide',
+    //   link: '/en/guide/what-is-vladops',
+    //   activeMatch: '/en/guide/'
+    // },
+    // {
+    //   text: 'Reference',
+    //   link: '/en/reference/site-config',
+    //   activeMatch: '/en/reference/'
+    // },
   ]
 }
 
@@ -43,32 +43,6 @@ function sidebarGuide() {
   return [
     {
       text: 'Introduction',
-      collapsed: false,
-      items: [
-        {
-          text: 'What is VitePress?',
-          link: 'what-is-vladops'
-        },
-        {
-          text: 'Getting Started',
-          link: 'getting-started'
-        },
-      ]
-    },
-    {
-      text: 'Writing',
-      collapsed: false,
-      items: [
-        {
-          text: 'Markdown Extensions',
-          link: 'markdown'
-        },
-      ]
-    },
-    {
-      text: 'Config & API Reference',
-      base: '/en/reference/',
-      link: 'site-config'
     }
   ]
 }
@@ -76,18 +50,7 @@ function sidebarGuide() {
 function sidebarReference() {
   return [
     {
-      text: 'Reference',
-      items: [
-        { text: 'Site Config', link: 'site-config' },
-        {
-          text: 'Default Theme',
-          base: '/en/reference/default-theme-',
-          items: [
-            { text: 'Overview', link: 'config' },
-            { text: 'Nav', link: 'nav' },
-          ]
-        }
-      ]
+      text: 'Reference'
     }
   ]
 }
