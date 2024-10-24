@@ -11,10 +11,10 @@ hero:
   actions:
     - theme: brand
       text: VLAD Ops란 무엇인가?
-      link: /ko/guide/what-is-vladops
+      link: /guide/what-is-vladops
     - theme: alt
       text: 빠른 시작
-      link: /ko/guide/getting-started
+      link: /guide/getting-started
   # image:
   #   src: /vdls-large.png
   #   alt: VitePress
