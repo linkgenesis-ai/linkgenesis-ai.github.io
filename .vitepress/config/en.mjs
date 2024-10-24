@@ -8,8 +8,8 @@ export const en = defineConfig({
     nav: nav(),
 
     sidebar: {
-      '/guide/': { base: '/guide/', items: sidebarGuide() },
-      '/reference/': { base: '/reference/', items: sidebarReference() }
+      '/en/guide/': { base: '/en/guide/', items: sidebarGuide() },
+      '/en/reference/': { base: '/en/reference/', items: sidebarReference() }
     },
 
     // editLink: {
@@ -28,13 +28,13 @@ function nav() {
   return [
     {
       text: 'Guide',
-      link: '/guide/what-is-vladops',
-      activeMatch: '/guide/'
+      link: '/en/guide/what-is-vladops',
+      activeMatch: '/en/guide/'
     },
     {
       text: 'Reference',
-      link: '/reference/site-config',
-      activeMatch: '/reference/'
+      link: '/en/reference/site-config',
+      activeMatch: '/en/reference/'
     },
   ]
 }
@@ -45,18 +45,31 @@ function sidebarGuide() {
       text: 'Introduction',
       collapsed: false,
       items: [
-        { text: 'What is VitePress?', link: 'what-is-vladops' },
-        { text: 'Getting Started', link: 'getting-started' },
+        {
+          text: 'What is VitePress?',
+          link: 'what-is-vladops'
+        },
+        {
+          text: 'Getting Started',
+          link: 'getting-started'
+        },
       ]
     },
     {
       text: 'Writing',
       collapsed: false,
       items: [
-        { text: 'Markdown Extensions', link: 'markdown' },
+        {
+          text: 'Markdown Extensions',
+          link: 'markdown'
+        },
       ]
     },
-    { text: 'Config & API Reference', base: '/reference/', link: 'site-config' }
+    {
+      text: 'Config & API Reference',
+      base: '/en/reference/',
+      link: 'site-config'
+    }
   ]
 }
 
@@ -68,7 +81,7 @@ function sidebarReference() {
         { text: 'Site Config', link: 'site-config' },
         {
           text: 'Default Theme',
-          base: '/reference/default-theme-',
+          base: '/en/reference/default-theme-',
           items: [
             { text: 'Overview', link: 'config' },
             { text: 'Nav', link: 'nav' },

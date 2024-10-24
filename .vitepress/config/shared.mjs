@@ -4,7 +4,7 @@ export const shared = defineConfig({
   title: 'VLAD Ops',
 
   rewrites: {
-    'en/:rest*': ':rest*'
+    'ko/:rest*': ':rest*'
   },
 
   lastUpdated: true,

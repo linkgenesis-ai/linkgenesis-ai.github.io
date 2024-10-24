@@ -8,8 +8,8 @@ export const ko = defineConfig({
     nav: nav(),
 
     sidebar: {
-      '/ko/guide/': { base: '/ko/guide/', items: sidebarGuide() },
-      '/ko/reference/': { base: '/ko/reference/', items: sidebarReference() }
+      '/guide/': { base: '/guide/', items: sidebarGuide() },
+      '/reference/': { base: '/reference/', items: sidebarReference() }
     },
 
     // editLink: {
@@ -48,13 +48,13 @@ function nav() {
   return [
     {
       text: '가이드',
-      link: '/ko/guide/what-is-vladops',
-      activeMatch: '/ko/guide/'
+      link: '/guide/what-is-vladops',
+      activeMatch: '/guide/'
     },
     {
       text: '레퍼런스',
-      link: '/ko/reference/site-config',
-      activeMatch: '/ko/reference/'
+      link: '/reference/site-config',
+      activeMatch: '/reference/'
     },
   ]
 }
@@ -87,7 +87,7 @@ function sidebarGuide() {
     },
     {
       text: '구성 & API 레퍼런스',
-      base: '/ko/reference/',
+      base: '/reference/',
       link: 'site-config'
     }
   ]
