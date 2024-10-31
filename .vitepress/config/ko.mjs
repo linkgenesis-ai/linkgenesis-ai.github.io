@@ -207,8 +207,8 @@ function sidebarReference() {
     {
       text: '학습 커널',
       items: [
-        { text: '개념'},
-        { text: '인터페이스'},
+        { text: '개념', link: 'kernel-overview' },
+        { text: '인터페이스', link: 'kernel-interface' },
       ]
     },
     {
