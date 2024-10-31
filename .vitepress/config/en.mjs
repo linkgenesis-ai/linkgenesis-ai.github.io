@@ -33,7 +33,7 @@ function nav() {
     // },
     // {
     //   text: 'Reference',
-    //   link: '/en/reference/site-config',
+    //   link: '/en/reference/introduction',
     //   activeMatch: '/en/reference/'
     // },
   ]

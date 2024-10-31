@@ -53,7 +53,7 @@ function nav() {
     },
     {
       text: '개발자 문서',
-      link: '/reference/site-config',
+      link: '/reference/overview',
       activeMatch: '/reference/'
     },
   ]
@@ -195,10 +195,12 @@ function sidebarReference() {
       collapsed: false,
       items: [
         {
-          text: '소개',
+          text: '개요',
+          link: 'overview'
         },
         {
           text: '프로젝트 키 확인하기',
+          link: 'project-key'
         }
       ]
     },
