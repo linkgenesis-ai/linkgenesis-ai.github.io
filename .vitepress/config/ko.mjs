@@ -253,8 +253,14 @@ function sidebarReference() {
     {
       text: '학습 커널',
       items: [
-        { text: '개념', link: 'kernel-overview' },
-        { text: '인터페이스', link: 'kernel-interface' },
+        { text: '모델 학습 환경', link: 'kernel-overview' },
+        { text: '학습의 시작', link: 'kernel-if-training-start',
+          items: [
+            {text: '학습 설정 파일', link: 'kernel-if-training-start-vlad-training-json'},
+            {text: '모델 설정 파일', link: 'kernel-if-training-start-model-json'},
+            {text: '학습 데이터', link: 'kernel-if-training-start-dataset'}
+          ]
+        }
       ]
     },
     {
