@@ -85,6 +85,10 @@ function sidebarGuide() {
           link: 'create-project'
         },
         {
+          text: '프로젝트 목록',
+          link: 'project-list'
+        },
+        {
           text: '프로젝트 설정',
           link: 'intro-project-settings',
           collapsed: false,
