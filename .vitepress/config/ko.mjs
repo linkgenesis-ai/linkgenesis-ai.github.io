@@ -76,114 +76,146 @@ function sidebarGuide() {
       ]
     },
     {
-      text: '프로젝트',
+      text: '프로젝트 관리',
+      link: 'intro-project',
       collapsed: false,
       items: [
         {
           text: '프로젝트 생성',
+          link: 'create-project'
         },
         {
-          text: '환경 설정',
+          text: '프로젝트 설정',
+          link: 'intro-project-settings',
           items: [
             {
-              text: '접근 권한'
+              text: '프로젝트 정보 확인 및 수정',
+              link: 'project-info',
             },
             {
-              text: '이미지 메타'
+              text: '접근 권한 설정',
+              link: 'access-control',
             },
             {
-              text: '어노테이션 타입'
+              text: '이미지 메타 데이터 설정',
+              link: 'image-meta',
             },
             {
-              text: '모델 타입'
+              text: '어노테이션 유형 설정',
+              link: 'annotation-type',
             },
             {
-              text: '모델셋 타입'
+              text: '모델 유형 설정',
+              link: 'model-type',
             },
             {
-              text: '모델셋 배포 관리'
+              text: '모델셋 유형 설정',
+              link: 'modelset-type',
             },
             {
-              text: '불량 유형'
+              text: '모델셋 배포 관리 설정',
+              link: 'modelset-deploy',
             },
             {
-              text: '서비스 위치'
+              text: '불량 유형 설정',
+              link: 'defect-type',
             },
             {
-              text: '기타 설정'
+              text: '서비스 위치 설정',
+              link: 'service-location',
+            },
+            {
+              text: '시스템 설정',
+              link: 'system-settings',
             },
           ]
         },
       ]
     },
     {
-      text: '데이터',
+      text: '데이터 관리',
+      link: 'intro-data',
       collapsed: false,
       items: [
         {
-          text: '데이터셋',
+          text: '데이터셋 관리',
+          link: 'manage-dataset'
         },
         {
-          text: '데이터 업로드',
+          text: '데이터 가져오기',
+          link: 'import-data'
         },
         {
-          text: '데이터 다운로드',
+          text: '데이터 내보내기',
+          link: 'export-data'
         }
       ]
     },
     {
       text: '레이블링',
+      link: 'intro-labeling',
       collapsed: false,
       items: [
         {
-          text: '레이블링',
-        }
+          text: '필터 구성',
+          link: 'labeling-filter'
+        },
+        {
+          text: '데이터셋 생성',
+          link: 'labeling-create-dataset'
+        },
       ]
     },
     {
-      text: '모델',
+      text: '학습 및 검증',
+      link: 'intro-training-validation',
       collapsed: false,
       items: [
         {
-          text: '학습 커널',
+          text: '커널',
+          link: 'kernel'
         },
         {
-          text: '모델 학습',
+          text: '학습',
+          link: 'training'
         },
         {
-          text: '모델 검증',
+          text: '검증',
+          link: 'validation'
         },
         {
           text: '모델 관리',
+          link: 'manage-model'
         },
       ]
     },
     {
-      text: '연동',
+      text: 'Edge Node 연동 관리',
+
       collapsed: false,
       items: [
         {
-          text: '모델셋',
+          text: '모델셋 관리',
+          link: 'manage-modelset'
         },
         {
-          text: '룰 파라미터',
+          text: '룰 파라미터 관리',
+          link: 'manage-rule-parameter'
         },
         {
-          text: 'DL 파라미터',
+          text: 'DL 파라미터 관리',
+          link: 'manage-dl-parameter'
         },
         {
-          text: '배포 및 배포 현황',
+          text: '배포 현황',
+          link: 'deployment-status'
         },
       ]
     },
     {
-      text: '서비스 상태',
+      text: '서비스 상태 모니터링',
+      link: 'service-status',
       collapsed: false,
-      items: [
-        {
-          text: '서비스 상태',
-        }
-      ]
     },
   ]
 }
