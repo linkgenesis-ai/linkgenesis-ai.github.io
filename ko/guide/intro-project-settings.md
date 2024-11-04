@@ -11,11 +11,11 @@ outline: deep
 
 ## [이미지 메타 데이터 설정](./image-meta)
 
-## [어노테이션 유형 설정](./annotation-type)
+## [어노테이션 타입 설정](./annotation-type)
 
-## [모델 유형 설정](./model-type)
+## [모델 타입 설정](./model-type)
 
-## [모델셋 유형 설정](./modelset-type)
+## [모델셋 타입 설정](./modelset-type)
 
 ## [모델셋 배포 관리 설정](./modelset-deploy)
 

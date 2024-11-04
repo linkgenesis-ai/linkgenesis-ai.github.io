@@ -87,6 +87,7 @@ function sidebarGuide() {
         {
           text: '프로젝트 설정',
           link: 'intro-project-settings',
+          collapsed: false,
           items: [
             {
               text: '프로젝트 정보 확인 및 수정',
@@ -101,15 +102,15 @@ function sidebarGuide() {
               link: 'image-meta',
             },
             {
-              text: '어노테이션 유형 설정',
+              text: '어노테이션 타입 설정',
               link: 'annotation-type',
             },
             {
-              text: '모델 유형 설정',
+              text: '모델 타입 설정',
               link: 'model-type',
             },
             {
-              text: '모델셋 유형 설정',
+              text: '모델셋 타입 설정',
               link: 'modelset-type',
             },
             {
