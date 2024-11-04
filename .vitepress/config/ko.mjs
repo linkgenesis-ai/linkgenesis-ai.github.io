@@ -82,12 +82,12 @@ function sidebarGuide() {
       collapsed: false,
       items: [
         {
-          text: '프로젝트 생성',
-          link: 'create-project'
-        },
-        {
           text: '프로젝트 목록',
           link: 'project-list'
+        },
+        {
+          text: '프로젝트 생성',
+          link: 'create-project'
         },
         {
           text: '프로젝트 설정',
