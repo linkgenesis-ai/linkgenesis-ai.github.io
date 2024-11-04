@@ -25,12 +25,14 @@ outline: deep
     }
 }
 ```
+
+## 모델 설정 스키마 파일
 ::: info
 모델 설정(`model.json`) 데이터는 모델 설정 스키마(`model_schema.json`)를 만족하는 데이터이므로 학습 커널 개발시 모델 설정 스키마(`model_schema.json`)를 정의해야 합니다.
 :::
 
-## 모델 설정 스키마 파일
-model_schema.json 에 필수적으로 정의되어야 할 아래 필드들을 제외하고는 학습 커널에서 필요에 따라 지원해야 하는 내용들을 추가해 넣을 수 있습니다.
+
+model_schema.json 에 필수적으로 정의되어야 할 아래 필드들을 제외하고 학습 커널 필요에 따라 지원해야 하는 내용들을 추가해 정의 할 수 있습니다.
 
 - image_type_list : 이 환경에서 접근 가능한 image의 종류(xy, albedo ...)
 - training_type : 모델 type에 의해 결정되는 학습(레이블)의 종류이다. 현재 정의되어 있고, 사용중인 training_type은 CL,SEG,OD,RC 의 네 종류 이다.

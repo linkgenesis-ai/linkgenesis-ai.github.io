@@ -254,11 +254,26 @@ function sidebarReference() {
       text: '학습 커널',
       items: [
         { text: '모델 학습 환경', link: 'kernel-overview' },
-        { text: '학습의 시작', link: 'kernel-if-training-start',
+        {
+          text: '학습의 시작', link: 'kernel-if-training-start',
           items: [
             {text: '학습 설정 파일', link: 'kernel-if-training-start-vlad-training-json'},
             {text: '모델 설정 파일', link: 'kernel-if-training-start-model-json'},
             {text: '학습 데이터', link: 'kernel-if-training-start-dataset'}
+          ]
+        },
+        {
+          text: '학습 진행과 완료', link: 'kernel-if-training-end',
+          items: [
+            {text: '학습 진행 상태', link: 'kernel-if-training-end-state'},
+            {text: '학습 결과', link: 'kernel-if-training-end-result'},
+          ]
+        },
+        {
+          text: '검증 진행과 완료', link: 'kernel-if-validation-end',
+          items: [
+            {text: '검증 진행 상태', link: 'kernel-if-validation-end-state'},
+            {text: '검증 결과', link: 'kernel-if-validation-end-result'},
           ]
         }
       ]
@@ -266,7 +281,7 @@ function sidebarReference() {
     {
       text: '외부 시스템 연동',
       items: [
-        { text: '개념'},
+        { text: '개요', link: 'ext-system-integration-overview' },
         { text: '데이터'},
         { text: '배포'},
       ]
