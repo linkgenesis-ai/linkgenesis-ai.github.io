@@ -63,6 +63,7 @@ function sidebarGuide() {
   return [
     {
       text: '소개',
+      link: 'what-is-vladops',
       collapsed: false,
       items: [
         {
@@ -162,12 +163,20 @@ function sidebarGuide() {
       collapsed: false,
       items: [
         {
-          text: '필터 구성',
-          link: 'labeling-filter'
+          text: '이미지 조회',
+          link: 'labeling-search'
+        },
+        {
+          text: '레이블링',
+          link: 'labeling-labeling'
         },
         {
           text: '데이터셋 생성',
           link: 'labeling-create-dataset'
+        },
+        {
+          text: '이미지 삭제',
+          link: 'labeling-delete'
         },
       ]
     },
@@ -177,26 +186,26 @@ function sidebarGuide() {
       collapsed: false,
       items: [
         {
-          text: '커널',
+          text: '학습 커널',
           link: 'kernel'
         },
         {
-          text: '학습',
+          text: '모델 학습',
           link: 'training'
         },
         {
-          text: '검증',
+          text: '모델 검증',
           link: 'validation'
         },
         {
-          text: '모델 관리',
-          link: 'manage-model'
+          text: '활성 모델',
+          link: 'activated-model'
         },
       ]
     },
     {
-      text: 'Edge Node 연동 관리',
-
+      text: '외부 서비스 연동 관리',
+      link: 'intro-external-service',
       collapsed: false,
       items: [
         {
