@@ -263,9 +263,9 @@ function sidebarReference() {
           ]
         },
         {
-          text: '학습 진행과 완료', link: 'kernel-if-training-end',
+          text: '학습 상태와 결과', link: 'kernel-if-training-end',
           items: [
-            {text: '학습 진행 상태', link: 'kernel-if-training-end-state'},
+            {text: '학습 상태', link: 'kernel-if-training-end-state'},
             {text: '학습 결과', link: 'kernel-if-training-end-result'},
           ]
         },
