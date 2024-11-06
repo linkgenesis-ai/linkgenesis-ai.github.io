@@ -10,4 +10,4 @@ outline: deep
 
 제공되는 인터페이스 방식은 아래와 같습니다.
 - 메세지 큐를 통한 데이터 전송
-- ~~RESTful API~~ (미지원)
+- RESTful API (지원 예정)

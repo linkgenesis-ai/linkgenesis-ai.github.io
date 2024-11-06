@@ -302,8 +302,8 @@ function sidebarReference() {
       text: '외부 시스템 연동',
       items: [
         { text: '개요', link: 'ext-system-integration-overview' },
-        { text: '데이터'},
-        { text: '배포'},
+        // { text: '데이터'},
+        // { text: '배포'},
       ]
     }
   ]
