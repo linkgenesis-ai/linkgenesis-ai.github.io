@@ -12,9 +12,10 @@ outline: deep
 
 ## 검증 완료
 
-```
-data = {
-    "cmd": "validation_status,
+```json
+{
+    "cmd": "validation_status",
+    "project_key": project_key,
     "validation_id": validation_id,
     "status":  "validation_done",
 }
@@ -22,9 +23,10 @@ data = {
 
 ## 검증 에러
 
-```
-data = {
-    "cmd": "validation_status,
+```json
+{
+    "cmd": "validation_status",
+    "project_key": project_key,
     "validation_id": validation_id,
     "status":  "validation_error",
     "message": "error message",

@@ -20,6 +20,7 @@ outline: deep
 
 {
   "vlad_training_config_version": 1.0,
+  "project_key": "project_key",
   "model_id" : "model_id",
   "validation_id": "validation_id",
   "operation": "train | validation",
@@ -39,6 +40,7 @@ outline: deep
 |필드명|내용|
 |---|---|
 | `vlad_training_config_version` | Config file의 버전. 학습커널이 지원하지 않는 버전일 경우 error를 발생시키면 됨 |
+| `project_key`          | 프로젝트 생성시 발행된 프로젝트 인증 키 |
 | `model_id`             | Operation이 training 일 경우, 학습 결과로 저장되는 모델의 id |
 | `validation_id`        | Operation이 validation일 경우 validation 결과로 저장되는 validation의 id |
 | `operation`            | `training` or `validation`의 값으로, `training`을 수행해야 하는지 `validation`을 수행해야 하는지 지정되어 있음 |

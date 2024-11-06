@@ -37,10 +37,15 @@ outline: deep
 
 에러 발생시에는 "training_error"를 "message" 필드와 함께 던져서 에러가 발생했음을 인식하게 할 수 있습니다. (error 처리 이후 "training_ing"나 "training_done 을 보내도 처리되지 않습니다.)
 
+### project_key
+`학습 설정 파일내 project_key`
+
+학습을 진행하고 있는 프로젝트의 인증 키입니다. 필수 데이터이며 학습 설정 파일에 정의 되어 있는 "project_key" 를 전달해야 합니다.
+
 ### model_id
 `학습 설정 파일내 model_id`
 
-현재 학습하고 있는 모델에 대한 식별자입니다. 식별자이므로 필수 데이터이며 학습 설정 파일에 정의 되어 있는 `model_id` 를 전달해야 합니다.
+학습을 진행하고 있는 모델에 대한 식별자입니다. 필수 데이터이며 학습 설정 파일에 정의 되어 있는 "model_id" 를 전달해야 합니다.
 
 검증의 경우 `validation_id` 입니다. 
 
@@ -63,9 +68,10 @@ outline: deep
 
 
 ## 학습 진행
-```
-data = {
-    "cmd": "training_status,
+```json
+{
+    "cmd": "training_status",
+    "project_key": project_key,
     "model_id": model_id,
     "status":  "training_ing",
     "percentage": percentage,
@@ -74,18 +80,20 @@ data = {
 ```
 
 ## 학습 완료
-```
-data = {
-    "cmd": "training_status,
+```json
+{
+    "cmd": "training_status",
+    "project_key": project_key,
     "model_id": model_id,
     "status":  "training_done",
 }
 ```
 
 ## 학습 에러
-```
-data = {
-    "cmd": "training_status,
+```json
+{
+    "cmd": "training_status",
+    "project_key": project_key,
     "model_id": model_id,
     "status":  "training_error",
     "message": "error message",
