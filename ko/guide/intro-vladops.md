@@ -1,4 +1,4 @@
-# VLAD Ops란 무엇인가? {#what-is-vladops}
+# VLAD Ops란 무엇인가? {#intro-vladops}
 
 VLAD(Vision Learning for Advanced Detection) + Operations 을 의미하며 머신 러닝 모델을 프로덕션으로 전환하는 프로세스를 간소화하고, 뒤이어 이를 유지관리하고 모니터링하는 데 주안점을 웹 기반 통합 솔루션 입니다.
 

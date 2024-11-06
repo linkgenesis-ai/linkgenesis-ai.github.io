@@ -48,7 +48,7 @@ function nav() {
   return [
     {
       text: '제품 가이드',
-      link: '/guide/what-is-vladops',
+      link: '/guide/intro-vladops',
       activeMatch: '/guide/'
     },
     {
@@ -63,12 +63,12 @@ function sidebarGuide() {
   return [
     {
       text: '소개',
-      link: 'what-is-vladops',
+      link: 'intro-vladops',
       collapsed: false,
       items: [
         {
           text: 'VLAD Ops란 무엇인가?',
-          link: 'what-is-vladops'
+          link: 'intro-vladops'
         },
         {
           text: '시작하기',
@@ -140,21 +140,45 @@ function sidebarGuide() {
     },
     {
       text: '데이터 관리',
-      link: 'intro-data',
+      link: 'intro-dataset',
       collapsed: false,
       items: [
         {
-          text: '데이터셋 관리',
-          link: 'manage-dataset'
+          text: '실시간 업로드',
+          link: 'dataset-global'
         },
         {
           text: '데이터 가져오기',
-          link: 'import-data'
+          link: 'dataset-import'
+        },
+        {
+          text: '데이터셋 관리',
+          link: 'dataset-list'
+        },
+        {
+          text: '데이터셋 삭제',
+          link: 'dataset-delete'
+        },
+        {
+          text: '데이터셋 복제',
+          link: 'dataset-clone'
         },
         {
           text: '데이터 내보내기',
-          link: 'export-data'
-        }
+          link: 'dataset-export'
+        },
+        {
+          text: '데이터셋 생성',
+          link: 'labeling-create-dataset'
+        },
+        {
+          text: '기존 데이터셋에 추가',
+          link: 'labeling-append-dataset'
+        },
+        {
+          text: '이미지 부분 삭제',
+          link: 'labeling-partial-delete'
+        },
       ]
     },
     {
@@ -169,10 +193,6 @@ function sidebarGuide() {
         {
           text: '레이블링',
           link: 'labeling-labeling'
-        },
-        {
-          text: '데이터셋 생성',
-          link: 'labeling-create-dataset'
         },
         {
           text: '이미지 삭제',
@@ -228,7 +248,7 @@ function sidebarGuide() {
     },
     {
       text: '서비스 상태 모니터링',
-      link: 'service-status',
+      link: 'intro-service-status',
       collapsed: false,
     },
   ]

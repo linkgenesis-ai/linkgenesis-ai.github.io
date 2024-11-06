@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: VLAD Ops란 무엇인가?
-      link: /guide/what-is-vladops
+      link: /guide/intro-vladops
     - theme: alt
       text: 빠른 시작
       link: /guide/getting-started

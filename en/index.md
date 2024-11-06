@@ -11,7 +11,7 @@ hero:
   # actions:
   #   - theme: brand
   #     text: What is VLAD Ops?
-  #     link: /en/guide/what-is-vladops
+  #     link: /en/guide/intro-vladops
   #   - theme: alt
   #     text: Quickstart
   #     link: /en/guide/getting-started

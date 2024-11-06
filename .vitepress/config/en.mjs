@@ -28,7 +28,7 @@ function nav() {
   return [
     // {
     //   text: 'Guide',
-    //   link: '/en/guide/what-is-vladops',
+    //   link: '/en/guide/intro-vladops',
     //   activeMatch: '/en/guide/'
     // },
     // {
