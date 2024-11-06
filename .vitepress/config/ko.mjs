@@ -295,7 +295,14 @@ function sidebarReference() {
             {text: '검증 상태', link: 'kernel-if-validation-end-state'},
             {text: '검증 결과', link: 'kernel-if-validation-end-result'},
           ]
-        }
+        },
+        {
+          text: '학습 커널 패키징', link: 'kernel-packaging',
+          items: [
+            {text: '커널 파일', link: 'kernel-packaging-kernel'},
+            {text: '모델 설정 스키마', link: 'kernel-packaging-schema'},
+          ]
+        },
       ]
     },
     {
