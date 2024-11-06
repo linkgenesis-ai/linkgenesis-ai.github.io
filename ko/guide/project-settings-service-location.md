@@ -10,6 +10,3 @@ outline: deep
 ## 기능
 
 
-## 다음 단계는?
-- [시스템 설정](./project-settings-system-settings) 기능을 이용하여 시스템 설정 정보를 확인하고 수정해 봅니다.
-

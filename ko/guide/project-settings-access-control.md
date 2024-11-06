@@ -10,6 +10,3 @@ outline: deep
 ## 기능
 
 
-## 다음 단계는?
-- [이미지 메타 데이터 설정](./project-settings-image-meta) 기능을 이용하여 이미지 메타 정보를 확인하고 수정해 봅니다.
-

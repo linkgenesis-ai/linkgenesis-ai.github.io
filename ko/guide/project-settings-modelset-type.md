@@ -10,6 +10,3 @@ outline: deep
 ## 기능
 
 
-## 다음 단계는?
-- [모델셋 배포 관리 설정](./project-settings-modelset-deploy) 기능을 이용하여 모델셋 배포 관리 정보를 확인하고 수정해 봅니다.
-

@@ -10,6 +10,3 @@ outline: deep
 ## 기능
 
 
-## 다음 단계는?
-- [불량 유형 설정](./project-settings-defect-type) 기능을 이용하여 불량 유형 정보를 확인하고 수정해 봅니다.
-
