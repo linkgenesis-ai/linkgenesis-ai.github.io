@@ -156,10 +156,6 @@ function sidebarGuide() {
           link: 'dataset-list'
         },
         {
-          text: '데이터셋 삭제',
-          link: 'dataset-delete'
-        },
-        {
           text: '데이터셋 복제',
           link: 'dataset-clone'
         },
@@ -168,16 +164,20 @@ function sidebarGuide() {
           link: 'dataset-export'
         },
         {
+          text: '데이터셋 삭제',
+          link: 'dataset-delete'
+        },
+        {
           text: '데이터셋 생성',
-          link: 'labeling-create-dataset'
+          link: 'dataset-create'
         },
         {
           text: '기존 데이터셋에 추가',
-          link: 'labeling-append-dataset'
+          link: 'dataset-append'
         },
         {
           text: '이미지 부분 삭제',
-          link: 'labeling-partial-delete'
+          link: 'dataset-partial-delete'
         },
       ]
     },
@@ -191,11 +191,15 @@ function sidebarGuide() {
           link: 'labeling-search'
         },
         {
-          text: '레이블링',
-          link: 'labeling-labeling'
+          text: '어노테이션 작성',
+          link: 'labeling-create'
         },
         {
-          text: '이미지 삭제',
+          text: '어노테이션 수정',
+          link: 'labeling-modify'
+        },
+        {
+          text: '어노테이션 삭제',
           link: 'labeling-delete'
         },
       ]
@@ -239,10 +243,6 @@ function sidebarGuide() {
         {
           text: 'DL 파라미터 관리',
           link: 'external-manage-dl-parameter'
-        },
-        {
-          text: '배포 현황',
-          link: 'external-deployment-status'
         },
       ]
     },
