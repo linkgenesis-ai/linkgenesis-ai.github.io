@@ -283,16 +283,16 @@ function sidebarReference() {
           ]
         },
         {
-          text: '학습 상태와 결과', link: 'kernel-if-training-end',
+          text: '학습의 진행', link: 'kernel-if-training-end',
           items: [
             {text: '학습 상태', link: 'kernel-if-training-end-state'},
             {text: '학습 결과', link: 'kernel-if-training-end-result'},
           ]
         },
         {
-          text: '검증 진행과 완료', link: 'kernel-if-validation-end',
+          text: '검증의 진행', link: 'kernel-if-validation-end',
           items: [
-            {text: '검증 진행 상태', link: 'kernel-if-validation-end-state'},
+            {text: '검증 상태', link: 'kernel-if-validation-end-state'},
             {text: '검증 결과', link: 'kernel-if-validation-end-result'},
           ]
         }

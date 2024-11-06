@@ -37,8 +37,6 @@ outline: deep
 
 에러 발생시에는 "training_error"를 "message" 필드와 함께 던져서 에러가 발생했음을 인식하게 할 수 있습니다. (error 처리 이후 "training_ing"나 "training_done 을 보내도 처리되지 않습니다.)
 
-검증의 경우에는 학습에 비해 상당히 빨리 끝나기 때문에 progress message는 생략할 수 있습니다. "validation_done", "validation_error" 의 두가지 메시지로 성공적으로 종료했는지, 에러가 발생했는지만 알려주면 되며 "validation_error"에는 "training_error"와 마찬가지로 "message" field에 자세한 에러 메시지를 채워서 보내야 합니다.
-
 ### model_id
 `학습 설정 파일내 model_id`
 
