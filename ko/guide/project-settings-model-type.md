@@ -11,5 +11,5 @@ outline: deep
 
 
 ## 다음 단계는?
-- [모델셋 타입 설정](./modelset-type) 기능을 이용하여 모델셋 타입 정보를 확인하고 수정해 봅니다.
+- [모델셋 타입 설정](./project-settings-modelset-type) 기능을 이용하여 모델셋 타입 정보를 확인하고 수정해 봅니다.
 

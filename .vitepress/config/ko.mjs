@@ -87,7 +87,7 @@ function sidebarGuide() {
         },
         {
           text: '프로젝트 생성',
-          link: 'create-project'
+          link: 'project-create'
         },
         {
           text: '프로젝트 설정',
@@ -96,43 +96,43 @@ function sidebarGuide() {
           items: [
             {
               text: '프로젝트 정보 확인 및 수정',
-              link: 'project-info',
+              link: 'project-settings-info',
             },
             {
               text: '접근 권한 설정',
-              link: 'access-control',
+              link: 'project-settings-access-control',
             },
             {
               text: '이미지 메타 데이터 설정',
-              link: 'image-meta',
+              link: 'project-settings-image-meta',
             },
             {
               text: '어노테이션 타입 설정',
-              link: 'annotation-type',
+              link: 'project-settings-annotation-type',
             },
             {
               text: '모델 타입 설정',
-              link: 'model-type',
+              link: 'project-settings-model-type',
             },
             {
               text: '모델셋 타입 설정',
-              link: 'modelset-type',
+              link: 'project-settings-modelset-type',
             },
             {
               text: '모델셋 배포 관리 설정',
-              link: 'modelset-deploy',
+              link: 'project-settings-modelset-deploy',
             },
             {
               text: '불량 유형 설정',
-              link: 'defect-type',
+              link: 'project-settings-defect-type',
             },
             {
               text: '서비스 위치 설정',
-              link: 'service-location',
+              link: 'project-settings-service-location',
             },
             {
               text: '시스템 설정',
-              link: 'system-settings',
+              link: 'project-settings-system-settings',
             },
           ]
         },
@@ -207,19 +207,19 @@ function sidebarGuide() {
       items: [
         {
           text: '학습 커널',
-          link: 'kernel'
+          link: 'training-training-kernel'
         },
         {
           text: '모델 학습',
-          link: 'training'
+          link: 'training-model-training'
         },
         {
           text: '모델 검증',
-          link: 'validation'
+          link: 'training-model-validation'
         },
         {
           text: '활성 모델',
-          link: 'activated-model'
+          link: 'training-activated-model'
         },
       ]
     },
@@ -230,19 +230,19 @@ function sidebarGuide() {
       items: [
         {
           text: '모델셋 관리',
-          link: 'manage-modelset'
+          link: 'external-manage-modelset'
         },
         {
           text: '룰 파라미터 관리',
-          link: 'manage-rule-parameter'
+          link: 'external-manage-rule-parameter'
         },
         {
           text: 'DL 파라미터 관리',
-          link: 'manage-dl-parameter'
+          link: 'external-manage-dl-parameter'
         },
         {
           text: '배포 현황',
-          link: 'deployment-status'
+          link: 'external-deployment-status'
         },
       ]
     },

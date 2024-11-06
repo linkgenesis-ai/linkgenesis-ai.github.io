@@ -11,5 +11,5 @@ outline: deep
 
 
 ## 다음 단계는?
-- [어노테이션 타입 설정](./annotation-type) 기능을 이용하여 어노테이션 타입 정보를 확인하고 수정해 봅니다.
+- [어노테이션 타입 설정](./project-settings-annotation-type) 기능을 이용하여 어노테이션 타입 정보를 확인하고 수정해 봅니다.
 

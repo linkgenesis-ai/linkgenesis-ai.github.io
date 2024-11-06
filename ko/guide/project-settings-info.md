@@ -11,5 +11,5 @@ outline: deep
 
 
 ## 다음 단계는?
-- [접근 권한 설정](./access-control) 기능을 이용하여 프로젝트 참여 구성원 정보를 확인하고 수정해 봅니다.
+- [접근 권한 설정](./project-settings-access-control) 기능을 이용하여 프로젝트 참여 구성원 정보를 확인하고 수정해 봅니다.
 
