@@ -99,7 +99,7 @@ function sidebarGuide() {
               link: 'project-settings-info',
             },
             {
-              text: '접근 권한 설정',
+              text: '접근 권한 관리',
               link: 'project-settings-access-control',
             },
             {
