@@ -10,7 +10,7 @@ outline: deep
 ## 개요
 외부 도구로 작성된 어노테이션을 가져와서 데이터셋을 구성할 수 있습니다.
 
-- 가져오기 형식 : 어노테이션을 작성한 도구 선택 `labelimg | datumaro | vlad`
+- 가져오기 형식 : 어노테이션을 작성한 도구 선택 `labelme | labelimg | datumaro | vlad`
 - 가져오기 파일 선택 : 데이터 가져오기에 사용될 파일 선택
   - 이미지 압축 파일 `zip | tar` (필수)  
     ```
@@ -34,6 +34,13 @@ outline: deep
     ```
   - 어노테이션 압축 파일 `zip | tar` (선택)  
     이미지에 작성된 어노테이션이 있는 경우 이미지 파일명과 동일한 어노테이션 파일이 필요합니다.
+
+    |  | calssification | LableMe | LableImg<br>(Pascal VOC) | VLAD<br>(Pascal VOC) |
+    | :---: | :---: | :---: | :---: | :---: |
+    | 파일타입 | ? | json | xml | xml |
+    | import | 미지원 | 미지원 | rectangle | rectangle, polygon |
+    | export | 미지원 | 미지원 | rectangle | rectangle, polygon |
+
     ```
     [예시 : annotations.zip]
     annotations.zip
