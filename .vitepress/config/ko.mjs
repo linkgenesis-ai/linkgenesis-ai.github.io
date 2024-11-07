@@ -168,7 +168,7 @@ function sidebarGuide() {
           link: 'dataset-export'
         },
         {
-          text: '데이터셋 메타 업데이트',
+          text: '이미지 메타 업데이트',
           link: 'dataset-update-meta'
         },
         {
