@@ -4,6 +4,8 @@ outline: deep
 
 # 레이블링
 
+![레이블링](/public/ko/labeling/intro-labeling.png)
+
 
 ## 개요
 데이터셋에 포함된 이미지를 검색하고 어노테이션을 편집하는 도구를 제공합니다.

@@ -148,12 +148,16 @@ function sidebarGuide() {
           link: 'dataset-global'
         },
         {
+          text: '데이터셋 관리',
+          link: 'dataset-list'
+        },
+        {
           text: '데이터 가져오기',
           link: 'dataset-import'
         },
         {
-          text: '데이터셋 관리',
-          link: 'dataset-list'
+          text: '데이터셋 상세 정보',
+          link: 'dataset-detail'
         },
         {
           text: '데이터셋 복제',
@@ -162,6 +166,10 @@ function sidebarGuide() {
         {
           text: '데이터 내보내기',
           link: 'dataset-export'
+        },
+        {
+          text: '데이터셋 메타 업데이트',
+          link: 'dataset-update-meta'
         },
         {
           text: '데이터셋 삭제',
@@ -216,6 +224,10 @@ function sidebarGuide() {
         {
           text: '모델 학습',
           link: 'training-model-training'
+        },
+        {
+          text: '다중 모델 학습',
+          link: 'training-multi-model-training'
         },
         {
           text: '모델 검증',
