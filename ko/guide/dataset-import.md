@@ -37,9 +37,9 @@ outline: deep
 
     |  | calssification | LableMe | LableImg<br>(Pascal VOC) | VLAD<br>(Pascal VOC) |
     | :---: | :---: | :---: | :---: | :---: |
-    | 파일타입 | ? | json | xml | xml |
-    | import | 미지원 | 미지원 | rectangle | rectangle, polygon |
-    | export | 미지원 | 미지원 | rectangle | rectangle, polygon |
+    | 파일타입 | txt | json | xml | xml |
+    | import | 지원예정 | 지원예정 | rectangle | rectangle, polygon |
+    | export | 지원예정 | 지원예정 | rectangle | rectangle, polygon |
 
     ```
     [예시 : annotations.zip]

@@ -226,10 +226,6 @@ function sidebarGuide() {
           link: 'training-model-training'
         },
         {
-          text: '다중 모델 학습',
-          link: 'training-multi-model-training'
-        },
-        {
           text: '모델 검증',
           link: 'training-model-validation'
         },
@@ -242,19 +238,19 @@ function sidebarGuide() {
     {
       text: '외부 서비스 연동 관리',
       link: 'intro-external-service',
-      collapsed: false,
+      collapsed: true,
       items: [
         {
           text: '모델셋 관리',
-          link: 'external-manage-modelset'
+          // link: 'external-manage-modelset'
         },
         {
           text: '룰 파라미터 관리',
-          link: 'external-manage-rule-parameter'
+          // link: 'external-manage-rule-parameter'
         },
         {
           text: 'DL 파라미터 관리',
-          link: 'external-manage-dl-parameter'
+          // link: 'external-manage-dl-parameter'
         },
       ]
     },
