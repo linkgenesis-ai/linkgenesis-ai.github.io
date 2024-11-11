@@ -21,4 +21,4 @@
 [https://vladops.linkgenes.is/](https://vladops.linkgenes.is/) 에서 로그인을 진행합니다.
 
 ## 다음 단계는? {#what-s-next}
-- [프로젝트 관리](./intro-project) 기능에 대해 알아봅니다.
+- 사용자 등록이 완료되었다면, [프로젝트 관리](./intro-project) 기능에 대해 알아보겠습니다.

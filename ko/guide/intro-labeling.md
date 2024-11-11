@@ -42,4 +42,4 @@ outline: deep
 
 
 ## 다음 단계는?
-- [학습 및 검증](./intro-training-validation) 기능에 대해 알아봅니다.
+- 레이블링 작업을 완료했다면, [학습 및 검증](./intro-training-validation) 기능에 대해 알아보겠습니다.
