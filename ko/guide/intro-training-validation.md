@@ -15,6 +15,3 @@ outline: deep
 - 모델 검증  
 - 활성 모델  
 
-
-## 다음 단계는?
-- [외부 서비스 연동 관리](./intro-external-service) 기능에 대해 알아봅니다.
