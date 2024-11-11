@@ -19,7 +19,7 @@ outline: deep
 ([이미지 메타 데이터 설정](./project-settings-image-meta) 의 image_type 에서 추가한 항목 중 선택)
 
 ### ROI (Region of Interest) 타입
-모델이 지원하는 ROI 타입을 설정합니다. (SEG, OD 유형인 경우 선택 가능)  
+모델의 레이블링 유형이 SEG 또는 OD 인 경우, 모델이 지원하는 ROI 타입을 설정합니다.  
 (ROI 타입 관리 구성 화면에서 추가한 항목 중 선택)
 
 ## 기능
