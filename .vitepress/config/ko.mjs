@@ -238,21 +238,21 @@ function sidebarGuide() {
     {
       text: '외부 서비스 연동 관리',
       link: 'intro-external-service',
-      collapsed: true,
-      items: [
-        {
-          text: '모델셋 관리',
-          // link: 'external-manage-modelset'
-        },
-        {
-          text: '룰 파라미터 관리',
-          // link: 'external-manage-rule-parameter'
-        },
-        {
-          text: 'DL 파라미터 관리',
-          // link: 'external-manage-dl-parameter'
-        },
-      ]
+      // collapsed: false,
+      // items: [
+      //   {
+      //     text: '모델셋 관리',
+      //     // link: 'external-manage-modelset'
+      //   },
+      //   {
+      //     text: '룰 파라미터 관리',
+      //     // link: 'external-manage-rule-parameter'
+      //   },
+      //   {
+      //     text: 'DL 파라미터 관리',
+      //     // link: 'external-manage-dl-parameter'
+      //   },
+      // ]
     },
     {
       text: '서비스 상태 모니터링',
