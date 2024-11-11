@@ -164,16 +164,16 @@ function sidebarGuide() {
           link: 'dataset-clone'
         },
         {
+          text: '데이터셋 삭제',
+          link: 'dataset-delete'
+        },
+        {
           text: '데이터 내보내기',
           link: 'dataset-export'
         },
         {
           text: '이미지 메타 업데이트',
           link: 'dataset-update-meta'
-        },
-        {
-          text: '데이터셋 삭제',
-          link: 'dataset-delete'
         },
         {
           text: '데이터셋 생성',

@@ -27,8 +27,3 @@ outline: deep
 ```※ image0n.xml 파일은 image0n.png 에 작성된 어노테이션이 있는 경우 생성```
 :::
 
-
-
-## 기능
-
-
