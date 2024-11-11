@@ -8,7 +8,11 @@ outline: deep
 
 
 ## 개요
-VLAD Ops 시스템의 동작 상태를 확인합니다.
+VLAD Ops 플랫폼을 구성하는 서비스의 동작 상태를 확인합니다.
+
+:::info 표시 서비스
+[서비스 위치 설정](./project-settings-service-location) 에서 추가한 항목이 표시됩니다.
+:::
 
 - 호스트 상태
   - E (Error) : 서비스가 정상적으로 동작하지 않음
@@ -18,6 +22,3 @@ VLAD Ops 시스템의 동작 상태를 확인합니다.
 - 동작 상태 확인 일시
   - 서비스 동작 상태를 확인한 최종 시각을 표시합니다.
 
-:::info 표시 항목
-[서비스 위치 설정](./project-settings-service-location) 에서 추가한 항목이 표시됩니다.
-:::
