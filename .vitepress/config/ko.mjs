@@ -73,7 +73,7 @@ function sidebarGuide() {
       collapsed: false,
       items: [
         {
-          text: 'VLAD Ops란 무엇인가?',
+          text: 'VLAD Ops란?',
           link: 'intro-vladops'
         },
         {
