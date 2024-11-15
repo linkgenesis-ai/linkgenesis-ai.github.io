@@ -4,7 +4,7 @@ outline: deep
 
 # 이미지 메타 업데이트
 
-![이미지 메타 없데이트](/public/ko/data/dataset-update-meta.png)
+![이미지 메타 없데이트](/ko/data/dataset-update-meta.png)
 
 
 ## 개요

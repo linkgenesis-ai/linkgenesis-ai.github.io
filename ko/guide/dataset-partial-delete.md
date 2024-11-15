@@ -4,7 +4,7 @@ outline: deep
 
 # 이미지 부분 삭제
 
-![이미지 부분 삭제](/public/ko/data/dataset-partial-delete.png)
+![이미지 부분 삭제](/ko/data/dataset-partial-delete.png)
 
 
 ## 개요

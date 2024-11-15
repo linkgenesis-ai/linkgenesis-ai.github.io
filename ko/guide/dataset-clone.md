@@ -4,7 +4,7 @@ outline: deep
 
 # 데이터셋 복제
 
-![데이터셋 복제](/public/ko/data/dataset-clone.png)
+![데이터셋 복제](/ko/data/dataset-clone.png)
 
 
 ## 개요

@@ -4,7 +4,7 @@ outline: deep
 
 # 서비스 위치 설정
 
-![서비스 위치 설정](/public/ko/project/project-settings-service-location.png)
+![서비스 위치 설정](/ko/project/project-settings-service-location.png)
 
 
 ## 개요

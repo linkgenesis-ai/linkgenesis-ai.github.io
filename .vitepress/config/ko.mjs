@@ -154,12 +154,12 @@ function sidebarGuide() {
           link: 'dataset-global'
         },
         {
-          text: '데이터셋 관리',
-          link: 'dataset-list'
-        },
-        {
           text: '데이터 가져오기',
           link: 'dataset-import'
+        },
+        {
+          text: '데이터셋 관리',
+          link: 'dataset-list'
         },
         {
           text: '데이터셋 상세 정보',
@@ -182,7 +182,7 @@ function sidebarGuide() {
           link: 'dataset-update-meta'
         },
         {
-          text: '데이터셋 생성',
+          text: '신규 데이터셋 생성',
           link: 'dataset-create'
         },
         {
@@ -224,15 +224,15 @@ function sidebarGuide() {
       collapsed: false,
       items: [
         {
-          text: '학습 커널',
+          text: '학습 커널 관리',
           link: 'training-training-kernel'
         },
         {
-          text: '모델 학습',
+          text: '모델 학습 관리',
           link: 'training-model-training'
         },
         {
-          text: '모델 검증',
+          text: '모델 검증 목록',
           link: 'training-model-validation'
         },
         {

@@ -4,7 +4,7 @@ outline: deep
 
 # 기존 데이터셋에 추가
 
-![기존 데이터셋에 추가](/public/ko/data/dataset-append.png)
+![기존 데이터셋에 추가](/ko/data/dataset-append.png)
 
 ## 개요
 [레이블링](./intro-labeling.md) 화면에서 조회한 이미지를 기존 데이터셋에 추가합니다.
@@ -28,7 +28,7 @@ outline: deep
 이미지를 추가할 기존 데이터셋을 선택합니다.  
 `데이터셋 선택` 버튼을 클릭하여 데이터셋 목록 팝업을 표시합니다.
 
-![기존 데이터셋 선택](/public/ko/data/dataset-append-select-dataset.png)
+![기존 데이터셋 선택](/ko/data/dataset-append-select-dataset.png)
 
 데이터셋을 선택하고 `적용` 버튼을 클릭하여 `대상 데이터셋`을 설정합니다.
 

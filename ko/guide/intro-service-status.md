@@ -4,7 +4,7 @@ outline: deep
 
 # 서비스 상태 모니터링
 
-<!-- ![서비스 상태 모니터링](/public/ko/intro-service-status.png) -->
+<!-- ![서비스 상태 모니터링](/ko/intro-service-status.png) -->
 
 
 ## 개요

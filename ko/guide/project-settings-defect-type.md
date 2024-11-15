@@ -4,7 +4,7 @@ outline: deep
 
 # 불량 유형 설정
 
-![불량 유형 설정](/public/ko/project/project-settings-defect-type.png)
+![불량 유형 설정](/ko/project/project-settings-defect-type.png)
 
 
 ## 개요

@@ -2,9 +2,9 @@
 outline: deep
 ---
 
-# 모델 검증
+# 모델 검증 목록
 
-![모델 검증](/public/ko/tranining-validation/training-model-validation.png)
+![모델 검증](/ko/tranining-validation/training-model-validation.png)
 
 
 ## 개요
@@ -15,7 +15,7 @@ outline: deep
 - 검증 상세 정보 보기
 
 ### 검증 상세 정보 보기
-![검증 상세](/public/ko/tranining-validation/training-model-validation-detail.png)
+![검증 상세](/ko/tranining-validation/training-model-validation-detail.png)
 
 - 기본 정보  
   학습 모델 검증 결과에 대한 기본 정보를 표시합니다.

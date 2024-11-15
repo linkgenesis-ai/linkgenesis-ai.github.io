@@ -4,7 +4,7 @@ outline: deep
 
 # 데이터 내보내기
 
-![데이터셋 내보내기](/public/ko/data/dataset-export.png)
+![데이터셋 내보내기](/ko/data/dataset-export.png)
 
 
 ## 개요

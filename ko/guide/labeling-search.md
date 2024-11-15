@@ -4,7 +4,7 @@ outline: deep
 
 # 이미지 조회
 
-![이미지 조회](/public/ko/labeling/labeling-search.png)
+![이미지 조회](/ko/labeling/labeling-search.png)
 
 
 ## 개요

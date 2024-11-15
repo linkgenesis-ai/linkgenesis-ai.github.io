@@ -4,7 +4,7 @@ outline: deep
 
 # 데이터셋 상세 정보
 
-![데이터셋 상세 정보](/public/ko/data/dataset-detail.png)
+![데이터셋 상세 정보](/ko/data/dataset-detail.png)
 
 
 ## 개요

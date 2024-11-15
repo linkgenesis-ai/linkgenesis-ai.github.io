@@ -4,7 +4,7 @@ outline: deep
 
 # 이미지 메타 데이터 설정
 
-![이미지 메타 데이터 설정](/public/ko/project/project-settings-image-meta.png)
+![이미지 메타 데이터 설정](/ko/project/project-settings-image-meta.png)
 
 
 ## 개요
@@ -58,7 +58,7 @@ list(목록) 타입의 목록을 구성할 항목을 표시합니다.
 ### 상세 항목 설정 하기 (리스트 타입)
 `상세 항목 설정` 버튼을 클릭하여 list(목록) 타입의 목록 구성 화면으로 진입합니다.
 
-![이미지 메타 데이터 설정 - 상세 항목 설정](/public/ko/project/project-settings-image-meta-list.png)
+![이미지 메타 데이터 설정 - 상세 항목 설정](/ko/project/project-settings-image-meta-list.png)
 
 `추가` 버튼을 클릭하여 리스트에 표시될 상세 항목을 추가할 수 있습니다.  
 `자동 추가` 버튼을 클릭하여 작성한 이미지 메타 항목 코드의 상세 항목을 DB 의 이미지 메타 데이터에서 검색하여 자동으로 추가합니다.

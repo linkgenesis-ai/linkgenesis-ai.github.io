@@ -4,7 +4,7 @@ outline: deep
 
 # 모델셋 타입 설정
 
-![모델셀 타입 설정](/public/ko/project/project-settings-modelset-type.png)
+![모델셀 타입 설정](/ko/project/project-settings-modelset-type.png)
 
 
 ## 개요

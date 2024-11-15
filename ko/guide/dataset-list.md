@@ -4,7 +4,7 @@ outline: deep
 
 # 데이터셋 관리
 
-![데이터셋 관리](/public/ko/data/dataset-list.png)
+![데이터셋 관리](/ko/data/dataset-list.png)
 
 
 ## 개요

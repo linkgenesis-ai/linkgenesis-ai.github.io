@@ -4,7 +4,7 @@ outline: deep
 
 # 데이터셋 생성
 
-![데이터셋 생성](/public/ko/data/dataset-create.png)
+![데이터셋 생성](/ko/data/dataset-create.png)
 
 
 ## 개요

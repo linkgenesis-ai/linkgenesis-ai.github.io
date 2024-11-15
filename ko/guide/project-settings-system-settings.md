@@ -4,7 +4,7 @@ outline: deep
 
 # 시스템 설정
 
-![시스템 설정](/public/ko/project/project-settings-system-settings.png)
+![시스템 설정](/ko/project/project-settings-system-settings.png)
 
 
 ## 개요

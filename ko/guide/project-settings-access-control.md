@@ -4,7 +4,7 @@ outline: deep
 
 # 접근 권한 관리
 
-![접근 권한 관리](/public/ko/project/project-settings-access-control.png)
+![접근 권한 관리](/ko/project/project-settings-access-control.png)
 
 
 ## 개요

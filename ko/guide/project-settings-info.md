@@ -4,7 +4,7 @@ outline: deep
 
 # 프로젝트 정보 확인 및 수정
 
-![프로젝트 정보 확인 및 수정](/public/ko/project/project-settings-info.png)
+![프로젝트 정보 확인 및 수정](/ko/project/project-settings-info.png)
 
 
 ## 개요

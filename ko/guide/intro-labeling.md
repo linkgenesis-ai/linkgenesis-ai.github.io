@@ -4,7 +4,7 @@ outline: deep
 
 # 레이블링
 
-![레이블링](/public/ko/labeling/intro-labeling.png)
+![레이블링](/ko/labeling/intro-labeling.png)
 
 
 ## 개요

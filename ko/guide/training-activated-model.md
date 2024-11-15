@@ -4,7 +4,7 @@ outline: deep
 
 # 활성 모델
 
-![활성 모델](/public/ko/tranining-validation/training-activated-model.png)
+![활성 모델](/ko/tranining-validation/training-activated-model.png)
 
 
 ## 개요

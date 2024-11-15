@@ -4,14 +4,14 @@ outline: deep
 
 # 어노테이션 타입 설정
 
-![어노테이션 타입](/public/ko/project/project-settings-annotation-type.png)
+![어노테이션 타입](/ko/project/project-settings-annotation-type.png)
 
 
 ## 개요
 어노테이션 타입 정보를 관리할 수 있습니다.
 
 ### 레이블링 유형  
-어노테이션이 어떤 레이블링 작업에 사용될 수 있는지 설정합니다.
+어노테이션이 어떤 유형의 레이블 학습에 사용될 것인지 설정합니다.
 ::: info 레이블링 유형
 - CL : Classification (분류)
 - SEG : Segmentation (분할)
@@ -44,6 +44,6 @@ outline: deep
 ### 이미지 카테고리 관리하기
 `이미지 카테고리 관리` 버튼을 클릭하여 이미지 카테고리 구성 화면으로 진입합니다.
 
-![이미지 카테고리](/public/ko/project/project-settings-image-category.png)
+![이미지 카테고리](/ko/project/project-settings-image-category.png)
 
 `추가` 버튼을 클릭하여 이미지 카테고리 항목을 추가할 수 있습니다.

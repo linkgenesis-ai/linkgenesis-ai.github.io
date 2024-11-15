@@ -4,7 +4,7 @@ outline: deep
 
 # 어노테이션 수정
 
-![어노테이션 수정](/public/ko/labeling/labeling-modify.png)
+![어노테이션 수정](/ko/labeling/labeling-modify.png)
 
 
 ## 개요

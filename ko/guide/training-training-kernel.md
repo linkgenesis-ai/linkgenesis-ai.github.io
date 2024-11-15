@@ -2,9 +2,9 @@
 outline: deep
 ---
 
-# 학습 커널
+# 학습 커널 관리
 
-![학습 커널](/public/ko/tranining-validation/training-training-kernel.png)
+![학습 커널](/ko/tranining-validation/training-training-kernel.png)
 
 
 ## 개요
@@ -31,7 +31,7 @@ docker 이미지 형태나, 소스 코드를 압축한 형태로 업로드 할 �
 - 학습 커널 상세 보기
 
 ### 학습 커널 가져오기  
-![학습 커널 가져오기](/public/ko/tranining-validation/training-training-kernel-import-training.png)
+![학습 커널 가져오기](/ko/tranining-validation/training-training-kernel-import-training.png)
 
 - 가져오기 타입 선택
   - 이미지 : docker 이미지 형태의 학습 커널을 가져옵니다.
@@ -44,7 +44,7 @@ docker 이미지 형태나, 소스 코드를 압축한 형태로 업로드 할 �
   전송량을 줄이기 위해 학습 커널의 소스 코드만 포함한 경우 base image 를 선택해야 정상적인 학습 진행이 가능합니다.
 
 ### 학습 커널 상세 보기
-![학습 커널 상세](/public/ko/tranining-validation/training-training-kernel-detail.png)
+![학습 커널 상세](/ko/tranining-validation/training-training-kernel-detail.png)
 
 - 기본 정보  
   학습 커널의 기본 구성 정보를 표시합니다.

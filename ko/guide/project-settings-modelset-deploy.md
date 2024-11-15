@@ -4,7 +4,7 @@ outline: deep
 
 # 모델셋 배포 관리 설정
 
-![모델셋 배포 관리 설정](/public/ko/project/project-settings-modelset-deploy.png)
+![모델셋 배포 관리 설정](/ko/project/project-settings-modelset-deploy.png)
 
 
 ## 개요
@@ -41,7 +41,7 @@ outline: deep
 ### 공장 항목 관리하기
 `공장 관리` 버튼을 클릭하여 공장 항목 관리 화면으로 진입합니다.
 
-![공장 관리](/public/ko/project/project-settings-modelset-deploy-fct-id.png)
+![공장 관리](/ko/project/project-settings-modelset-deploy-fct-id.png)
 
 `추가` 버튼을 클릭하여 공장 항목을 추가할 수 있습니다.
 

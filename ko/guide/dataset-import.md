@@ -4,7 +4,7 @@ outline: deep
 
 # 데이터 가져오기
 
-![데이터 가져오기](/public/ko/data/dataset-import.png)
+![데이터 가져오기](/ko/data/dataset-import.png)
 
 
 ## 개요

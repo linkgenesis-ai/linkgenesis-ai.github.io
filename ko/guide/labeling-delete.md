@@ -4,7 +4,7 @@ outline: deep
 
 # 어노테이션 삭제
 
-![어노테이션 삭제](/public/ko/labeling/labeling-delete.png)
+![어노테이션 삭제](/ko/labeling/labeling-delete.png)
 
 
 ## 개요
