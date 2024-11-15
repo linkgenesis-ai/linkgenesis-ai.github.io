@@ -9,7 +9,8 @@ export const ko = defineConfig({
 
     sidebar: {
       '/guide/': { base: '/guide/', items: sidebarGuide() },
-      '/reference/': { base: '/reference/', items: sidebarReference() }
+      '/reference/': { base: '/reference/', items: sidebarReference() },
+      '/blog/': { base: '/blog/', items: sidebarBlog() }
     },
 
     // editLink: {
@@ -55,6 +56,11 @@ function nav() {
       text: '개발자 문서',
       link: '/reference/overview',
       activeMatch: '/reference/'
+    },
+    {
+      text: '블로그',
+      link: '/blog/hello',
+      activeMatch: '/blog/'
     },
   ]
 }
@@ -321,5 +327,14 @@ function sidebarReference() {
         // { text: '배포'},
       ]
     }
+  ]
+}
+
+function sidebarBlog() {
+  return [
+    {
+      text: '방문을 환영합니다',
+      link: 'hello'
+    },
   ]
 }
