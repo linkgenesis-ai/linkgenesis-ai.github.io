@@ -1,7 +1,7 @@
 
-# 시작하기 {#getting-started}
+# 체험 계정 신청하기
 
-## 무료 체험 신청 {#request-for-use}
+## 체험 계정 신청 {#get-free-account}
 
 아래 메일 주소로 사용자 등록 요청 합니다.
 

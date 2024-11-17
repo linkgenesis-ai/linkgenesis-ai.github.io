@@ -77,8 +77,12 @@ function sidebarGuide() {
           link: 'intro-vladops'
         },
         {
-          text: '시작하기',
-          link: 'getting-started'
+          text: 'VLAD Ops 사용하기',
+          link: 'get-started'
+        },
+        {
+          text: '체험 계정 신청하기',
+          link: 'get-free-account'
         },
       ]
     },

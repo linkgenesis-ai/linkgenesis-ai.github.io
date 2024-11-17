@@ -14,7 +14,7 @@ hero:
       link: /guide/intro-vladops
     - theme: alt
       text: 빠른 시작
-      link: /guide/getting-started
+      link: /guide/get-started
   # image:
   #   src: /vdls-large.png
   #   alt: VitePress
