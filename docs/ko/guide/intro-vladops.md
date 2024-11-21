@@ -11,9 +11,6 @@
 
 VLAD Ops(Vision Learning for Advanced Detection + Operations)는 머신러닝 생명 주기 전반을 지원하여, 머신 러닝 모델을 프로덕션으로 전환하는 프로세스를 간소화하고, 프로젝트와 시스템의 유지 관리 및 모니터링 효율성을 증대하는데 최적화된 웹 기반 통합 솔루션입니다.
 
-<div class="tip custom-block" style="padding-top: 8px">
-사용해보고 싶으신가요? [VLAD Ops 사용하기](./get-started)로 건너뛰세요.
-</div>
 
 ## 구성 및 주요 기능 {#main-functions}
 
