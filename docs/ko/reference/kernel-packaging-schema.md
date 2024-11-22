@@ -20,6 +20,12 @@ model_schema.json 에 필수적으로 정의되어야 할 아래 항목 외에 �
 ### model_type
 커널이 지원하는 모델 타입(기본정보에 나열되어 있는)을 enum 형태로 표시되어 있습니다. 이미 아는 type에 대해서 적어주면 해당 모델 타입과 바인딩이 되고, 적어주지 않는다 하더라도 학습 플랫폼 내에서 training_type 이 같다면 수동으로 연결 할 수도 있습니다.
 
+### training_params
+
+실제로 학습에 사용되는 하이퍼 파라메터들이 정의 되는 영역입니다. 
+
+학습에 사용되는 하이퍼 파라메터들을 나열해 두면 사용자가 해당 하이퍼 파라메터를 지정해서 학습을 시켜 볼 수 있습니다. 학습을 하는데 반드시 필요한 하이퍼 파라메터는 required 에 추가하여 그 값을 사용자가 반드시 입력해야지만 학습이 시작되도록 할 수 있습니다.
+
 ### image_type_list
 
 접근 가능한 이미지 종류(xy, albedo ...)의 목록입니다. 값은 string arrary 형태를 가지며, 그 값은 기본정보의 프로젝트 환경의 TRAINABLE_IMAGE_TYPE 에 있는 항목들의 열거입니다.
@@ -29,12 +35,6 @@ model_schema.json 에 필수적으로 정의되어야 할 아래 항목 외에 �
 ```
 "image_type_list": ["_A.png", "_X.png", "_CH1.png", "_CH2.png"]
 ```
-
-### training_params
-
-실제로 학습에 사용되는 하이퍼 파라메터들이 정의 되는 영역입니다. 
-
-학습에 사용되는 하이퍼 파라메터들을 나열해 두면 사용자가 해당 하이퍼 파라메터를 지정해서 학습을 시켜 볼 수 있습니다. 학습을 하는데 반드시 필요한 하이퍼 파라메터는 required 에 추가하여 그 값을 사용자가 반드시 입력해야지만 학습이 시작되도록 할 수 있습니다.
 
 ### batchable_params
 옵션 항목인 "batchable_params" 에는 training_params 에 정의되어 있는 항목중 영역 스캔이 필요하거나, 영역 스캔이 가능한 항목을 집어 넣어, 사용자가 영역 스캔을 할 수 있도록 할 수 있습니다.
@@ -54,66 +54,59 @@ model_schema.json 에 필수적으로 정의되어야 할 아래 항목 외에 �
 ## 모델 설정 스키마 파일 예
 ```json
 {
-    "type": "object",
-    "properties": {
-        "training_type": {
-            "type": "string",
-            "const": "SEG"
-        },
-        "model_type": {
-            "type": "string",
-            "enum": [
-                "SEG_BODY",
-                "SEG_SIDE",
-                "SEG_MULTI"
-            ]
-        },
-        "image_type_list": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
-        }
+  "type": "object",
+  "properties": {
+    "training_type": {
+      "type": "string",
+      "const": "SEG"
+    },
+    "model_type": {
+      "type": "string",
+      "enum": [
+        "SEG_BODY",
+        "SEG_SIDE",
+        "SEG_MULTI"
+      ]
     },
     "training_params": {
-        "type": "object",
-        "properties": {
-            "iterations": {
-                "type": "integer",
-                "maximum": 10000
-            },
-            "learning_rate": {
-                "type": "number"
-            },
-            "momentum": {
-                "type": "number"
-            },
-            "weight_decay": {
-                "type": "number"
-            },
-            "scheduler_gamma": {
-                "type": "number"
-            },
-            "min_size": {
-                "type": "integer",
-                "maximum": 10000
-            },
-            "max_size": {
-                "type": "integer",
-                "maximum": 10000
-            },
-            "random_state": {
-                "type": "integer"
-            },
-            "step_check_interval": {
-                "type": "integer"
-            }
+      "type": "object",
+      "properties": {
+        "iterations": {
+          "type": "integer",
+          "maximum": 10000
         },
-        "required": [
-            "iterations",
-            "learning_rate"
-        ],
-        "additionalProperties": false
+        "learning_rate": {
+          "type": "number"
+        },
+        "momentum": {
+          "type": "number"
+        },
+        "weight_decay": {
+          "type": "number"
+        },
+        "scheduler_gamma": {
+          "type": "number"
+        },
+        "min_size": {
+          "type": "integer",
+          "maximum": 10000
+        },
+        "max_size": {
+          "type": "integer",
+          "maximum": 10000
+        },
+        "random_state": {
+          "type": "integer"
+        },
+        "step_check_interval": {
+          "type": "integer"
+        },
+      },
+      "required": [
+        "iterations",
+        "learning_rate"
+      ],
+      "additionalProperties": false
     },
     "image_type_list": {
       "type": "array",
@@ -122,22 +115,22 @@ model_schema.json 에 필수적으로 정의되어야 할 아래 항목 외에 �
       }
     },
     "batchable_params": {
-        "type": "object",
-        "properties": {
-            "iterations": {
-                "type": "boolean"
-            },
-            "learning_rate": {
-                "type": "boolean"
-            }
+      "type": "object",
+      "properties": {
+        "iterations": {
+          "type": "boolean"
+        },
+        "learning_rate": {
+          "type": "boolean"
         }
-    },
-    "required": [
-        "training_type",
-        "model_type",
-        "training_params",
-        "image_type_list"
-    ],
-    "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "training_type",
+    "model_type",
+    "training_params"
+  ],
+  "additionalProperties": false
 }
 ```
