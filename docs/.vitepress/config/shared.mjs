@@ -26,12 +26,12 @@ export const shared = defineConfig({
     ]
   },
 
-  // sitemap: {
-  //   hostname: 'https://vitepress.dev',
-  //   transformItems(items) {
-  //     return items.filter((item) => !item.url.includes('migration'))
-  //   }
-  // },
+  sitemap: {
+    hostname: 'https://linkgenesis-ai.github.io',
+    // transformItems(items) {
+    //   return items.filter((item) => !item.url.includes('migration'))
+    // }
+  },
 
   /* prettier-ignore */
   // head: [
