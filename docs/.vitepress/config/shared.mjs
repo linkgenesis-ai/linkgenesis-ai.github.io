@@ -28,6 +28,7 @@ export const shared = defineConfig({
 
   sitemap: {
     hostname: 'https://linkgenesis-ai.github.io',
+    lastmodDateOnly: true,
     // transformItems(items) {
     //   return items.filter((item) => !item.url.includes('migration'))
     // }
