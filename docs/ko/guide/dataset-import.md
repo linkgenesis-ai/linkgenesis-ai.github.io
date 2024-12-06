@@ -8,19 +8,34 @@ outline: deep
 
 
 ## 개요
-외부 도구로 작성된 어노테이션을 가져와서 데이터셋을 구성할 수 있습니다.
+작성된 데이터셋을 가져와서 새로운 데이터셋을 구성할 수 있습니다.
 
 ### 가져오기 형식
-어노테이션 파일 포맷(어노테이션을 작성한 도구)을 선택합니다.
-::: info 지원 포맷
+데이터셋을 가져올 형식을 선택합니다.
+
+::: info 지원하는 가져오기 형식
+- Vlad Ops : Vlad Ops 에서 내보내기 한 데이터셋을 가져올 수 있습니다.
+- 외부 도구 : 외부 도구에서 작성한 데이터셋을 가져올 수 있습니다.
+:::
+
+### 어노테이션 형식
+가져오기 형식을 "외부 도구"로 선택한 경우, 어노테이션 파일 포맷(어노테이션을 작성한 도구)을 선택합니다.
+
+::: info 지원하는 어노테이션 형식
 - labelme
 - labelimg
 - datumaro
-- vlad
 :::
 
 ### 가져오기 파일 선택
 데이터 가져오기에 사용될 파일을 선택합니다.
+
+|| Vlad Ops | 외부 도구 |
+| :---: | :---: | :---: |
+| 필요 파일 | 데이터셋 파일 (zip, tar)<br>(이미지, 이미지 메타, 어노테이션 포함) | 이미지 압축 파일 (zip, tar)<br>이미지 메타 파일 (csv)<br>어노테이션 압축 파일 (zip, tar) |
+
+
+
 - 이미지 압축 파일 (필수)  
 이미지 압축 파일은 zip 또는 tar 형식으로 압축되어야 하고, 아래와 같이 구성되어야 합니다.  
 ```
@@ -50,16 +65,35 @@ acq_dt,image_type,prod_id,judge_rslt,org_id,obj_id,image_file_nm
   || calssification | LableMe | LableImg<br>(Pascal VOC) | VLAD<br>(Pascal VOC) |
   | :---: | :---: | :---: | :---: | :---: |
   | 파일타입 | txt | json | xml | xml |
-  | import | 지원예정 | 지원예정 | rectangle | rectangle, polygon |
-  | export | 지원예정 | 지원예정 | rectangle | rectangle, polygon |
+  | import | cl, rc | rectangle, polygon | rectangle | rectangle, polygon |
+  | export | cl, rc | rectangle, polygon | rectangle | rectangle, polygon |
 
   ```
   [예시 : 가져오려는 어노테이션 압축 파일(annotations.zip)의 구성]
   annotations.zip
-  ├─ image01.xml (image01.png 에 작성된 어노테이션 정보 파일)
+  ├─ cl.txt (프로젝트에 포함된 이미지 전체에 작성된 CL Type 어노테이션 정보 파일)
+  ├─ cl.cat (cl.txt 에 포함된 CL Type 어노테이션 타입 목록 파일)
+  ├─ rc.txt (프로젝트에 포함된 이미지 전체에 작성된 RC Type 어노테이션 정보 파일)
+  ├─ rc.cat (rc.txt 에 포함된 RC Type 어노테이션 타입 목록 파일)
+  ├─ image01.xml (image01.png 에 작성된 SEG 또는 OD Type 어노테이션 정보 파일)
   ├─ image02.xml
   ├─ ...
   └─ image0n.xml
+  ```
+  ```
+  [예시 : 어노테이션 파일(cl.txt)의 구성]
+  THERMOSTATIC_VALVE_01_L_0_A.png VALVE_GOOD
+  THERMOSTATIC_VALVE_02_L_0_A.png VALVE_CONTAMINATED
+  ```
+  ```
+  [예시 : 어노테이션 파일(rc.txt)의 구성]
+  THERMOSTATIC_VALVE_03_L_0_A.png RC_TEST true 1015 1135 168 156
+  THERMOSTATIC_VALVE_03_L_0_A.png RC_TEST false 1227 1422 174 175
+  THERMOSTATIC_VALVE_03_R_0_A.png RC_TEST true 278 168 29 28
+  THERMOSTATIC_VALVE_04_L_0_A.png RC_TEST true 1015 1135 168 156
+  THERMOSTATIC_VALVE_04_R_0_A.png RC_TEST true 278 168 29 28
+  THERMOSTATIC_VALVE_04_L_0_A.png RC_TEST true 1015 1135 168 156
+  THERMOSTATIC_VALVE_04_R_0_A.png RC_TEST true 278 168 29 28
   ```
   ```
   [예시 : 어노테이션 파일(image01.xml)의 구성]
@@ -102,20 +136,10 @@ acq_dt,image_type,prod_id,judge_rslt,org_id,obj_id,image_file_nm
                   <x>851.9</x>
                   <y>964.5</y>
               </pt>
-              <pt>
-                  <x>679.9</x>
-                  <y>901.0</y>
-              </pt>
-              <pt>
-                  <x>638.8</x>
-                  <y>744.0</y>
-              </pt>
           </polygon>
       </object>
   </annotation>
   ```
-
-
 
 ::: info 참고
 현재 제공하지 않는 외부 도구로 작성된 어노테이션의 경우 VLAD Ops 커스터마이징 작업을 거쳐 제공합니다.
