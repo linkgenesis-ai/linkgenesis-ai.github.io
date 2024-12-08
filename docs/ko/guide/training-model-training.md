@@ -67,7 +67,7 @@ outline: deep
 - 사용할 GPU 수  
   학습에 사용할 GPU 수를 선택합니다.
   ::: warning GPU 수
-  스키마의 supported_gpu_count에 설정된 minimum/maximum 값이 없는 경우는 1 로 고정됩니다.
+  스키마의 supported_gpu_count에 설정된 minimum ~ maximum 사이의 값을 선택할 수 있으며, 설정된 값이 없는 경우는 1 로 고정됩니다.
   :::
 - 학습 시작  
   버튼을 클릭하면 학습이 시작됩니다.
