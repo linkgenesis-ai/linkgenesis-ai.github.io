@@ -59,8 +59,19 @@ function nav() {
     },
     {
       text: '블로그',
-      link: '/blog/hello',
       activeMatch: '/blog/',
+      items: [
+          {
+              text: 'Blog Home',
+              link: '/blog/',
+              activeMatch: '/blog/$',
+          },
+          {
+              text: 'Archives',
+              link: '/blog/archives',
+              activeMatch: '/blog/archives',
+          },
+      ],
     },
   ];
 }

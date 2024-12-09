@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress';
+import { enUS } from 'date-fns/locale';
 
 export const shareConfig = defineConfig({
   title: 'VLAD Ops',
@@ -66,5 +67,40 @@ export const shareConfig = defineConfig({
         gtag('config', 'G-P6WWQXT3BW');`
       ]
     ],
-  themeConfig: {},
+  themeConfig: {
+    // https://vitepress.dev/reference/default-theme-config
+    blog: {
+      title: 'My AI Written Blog',
+      description: 'All these articles were written by AI!',
+      defaultAuthor: 'Writer',
+      categoryIcons: {
+        article: 'i-[carbon/notebook]',
+        tutorial: 'i-[carbon/book]',
+        document: 'i-[carbon/document]',
+      },
+      tagIcons: {
+        github: 'i-[carbon/logo-github]',
+        vue: 'i-[carbon/logo-vue]',
+        'web development': 'i-[carbon/development]',
+        javascript: 'i-[logos/javascript]',
+        html: 'i-[logos/html-5]',
+      },
+      dateConfig: {
+        format: 'yyyy/MM/dd',
+        locale: enUS,
+      },
+      giscus: {
+        repo: '',
+        repoId: '',
+        category: 'General',
+        categoryId: '',
+        mapping: 'pathname',
+        inputPosition: 'top',
+        lightTheme: 'light',
+        darkTheme: 'transparent_dark',
+        defaultEnable: false,
+      },
+    },
+    // https://vitepress.dev/reference/default-theme-config
+  },
 });
