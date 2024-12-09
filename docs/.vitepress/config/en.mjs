@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress';
 
 export const en = defineConfig({
   lang: 'en-US',
@@ -9,7 +9,7 @@ export const en = defineConfig({
 
     sidebar: {
       '/en/guide/': { base: '/en/guide/', items: sidebarGuide() },
-      '/en/reference/': { base: '/en/reference/', items: sidebarReference() }
+      '/en/reference/': { base: '/en/reference/', items: sidebarReference() },
     },
 
     // editLink: {
@@ -21,8 +21,8 @@ export const en = defineConfig({
     //   message: 'Released under the MIT License.',
     //   copyright: 'Copyright © 2019-present Evan You'
     // }
-  }
-})
+  },
+});
 
 function nav() {
   return [
@@ -36,21 +36,21 @@ function nav() {
     //   link: '/en/reference/introduction',
     //   activeMatch: '/en/reference/'
     // },
-  ]
+  ];
 }
 
 function sidebarGuide() {
   return [
     {
       text: 'Introduction',
-    }
-  ]
+    },
+  ];
 }
 
 function sidebarReference() {
   return [
     {
-      text: 'Reference'
-    }
-  ]
+      text: 'Reference',
+    },
+  ];
 }

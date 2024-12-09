@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress';
 
 export const ko = defineConfig({
   lang: 'ko-KR',
@@ -10,7 +10,7 @@ export const ko = defineConfig({
     sidebar: {
       '/guide/': { base: '/guide/', items: sidebarGuide() },
       '/reference/': { base: '/reference/', items: sidebarReference() },
-      '/blog/': { base: '/blog/', items: sidebarBlog() }
+      '/blog/': { base: '/blog/', items: sidebarBlog() },
     },
 
     // editLink: {
@@ -25,15 +25,15 @@ export const ko = defineConfig({
 
     docFooter: {
       prev: '이전',
-      next: '다음'
+      next: '다음',
     },
 
     outline: {
-      label: '이 페이지 목차'
+      label: '이 페이지 목차',
     },
 
     lastUpdated: {
-      text: '업데이트 날짜'
+      text: '업데이트 날짜',
     },
 
     langMenuLabel: '언어 변경',
@@ -41,28 +41,28 @@ export const ko = defineConfig({
     sidebarMenuLabel: '사이드바 메뉴',
     darkModeSwitchLabel: '다크 모드',
     lightModeSwitchTitle: '라이트 모드로 변경',
-    darkModeSwitchTitle: '다크 모드로 변경'
-  }
-})
+    darkModeSwitchTitle: '다크 모드로 변경',
+  },
+});
 
 function nav() {
   return [
     {
       text: '제품 가이드',
       link: '/guide/intro-vladops',
-      activeMatch: '/guide/'
+      activeMatch: '/guide/',
     },
     {
       text: '개발자 문서',
       link: '/reference/overview',
-      activeMatch: '/reference/'
+      activeMatch: '/reference/',
     },
     {
       text: '블로그',
       link: '/blog/hello',
-      activeMatch: '/blog/'
+      activeMatch: '/blog/',
     },
-  ]
+  ];
 }
 
 function sidebarGuide() {
@@ -74,17 +74,17 @@ function sidebarGuide() {
       items: [
         {
           text: 'VLAD Ops란?',
-          link: 'intro-vladops'
+          link: 'intro-vladops',
         },
         {
           text: 'VLAD Ops 사용하기',
-          link: 'get-started'
+          link: 'get-started',
         },
         {
           text: '체험 계정 신청하기',
-          link: 'get-free-account'
+          link: 'get-free-account',
         },
-      ]
+      ],
     },
     {
       text: '프로젝트 관리',
@@ -93,11 +93,11 @@ function sidebarGuide() {
       items: [
         {
           text: '프로젝트 목록',
-          link: 'project-list'
+          link: 'project-list',
         },
         {
           text: '프로젝트 생성',
-          link: 'project-create'
+          link: 'project-create',
         },
         {
           text: '프로젝트 설정',
@@ -144,9 +144,9 @@ function sidebarGuide() {
               text: '시스템 설정',
               link: 'project-settings-system-settings',
             },
-          ]
+          ],
         },
-      ]
+      ],
     },
     {
       text: '데이터 관리',
@@ -155,49 +155,49 @@ function sidebarGuide() {
       items: [
         {
           text: '실시간 업로드',
-          link: 'dataset-global'
+          link: 'dataset-global',
         },
         {
           text: '데이터 가져오기',
-          link: 'dataset-import'
+          link: 'dataset-import',
         },
         {
           text: '데이터셋 관리',
-          link: 'dataset-list'
+          link: 'dataset-list',
         },
         {
           text: '데이터셋 상세 정보',
-          link: 'dataset-detail'
+          link: 'dataset-detail',
         },
         {
           text: '데이터셋 복제',
-          link: 'dataset-clone'
+          link: 'dataset-clone',
         },
         {
           text: '데이터셋 삭제',
-          link: 'dataset-delete'
+          link: 'dataset-delete',
         },
         {
           text: '데이터 내보내기',
-          link: 'dataset-export'
+          link: 'dataset-export',
         },
         {
           text: '이미지 메타 업데이트',
-          link: 'dataset-update-meta'
+          link: 'dataset-update-meta',
         },
         {
           text: '신규 데이터셋 생성',
-          link: 'dataset-create'
+          link: 'dataset-create',
         },
         {
           text: '기존 데이터셋에 추가',
-          link: 'dataset-append'
+          link: 'dataset-append',
         },
         {
           text: '이미지 부분 삭제',
-          link: 'dataset-partial-delete'
+          link: 'dataset-partial-delete',
         },
-      ]
+      ],
     },
     {
       text: '레이블링',
@@ -206,21 +206,21 @@ function sidebarGuide() {
       items: [
         {
           text: '이미지 조회',
-          link: 'labeling-search'
+          link: 'labeling-search',
         },
         {
           text: '어노테이션 작성',
-          link: 'labeling-create'
+          link: 'labeling-create',
         },
         {
           text: '어노테이션 수정',
-          link: 'labeling-modify'
+          link: 'labeling-modify',
         },
         {
           text: '어노테이션 삭제',
-          link: 'labeling-delete'
+          link: 'labeling-delete',
         },
-      ]
+      ],
     },
     {
       text: '학습 및 검증',
@@ -229,21 +229,21 @@ function sidebarGuide() {
       items: [
         {
           text: '학습 커널 관리',
-          link: 'training-training-kernel'
+          link: 'training-training-kernel',
         },
         {
           text: '모델 학습 관리',
-          link: 'training-model-training'
+          link: 'training-model-training',
         },
         {
           text: '모델 검증 목록',
-          link: 'training-model-validation'
+          link: 'training-model-validation',
         },
         {
           text: '활성 모델',
-          link: 'training-activated-model'
+          link: 'training-activated-model',
         },
-      ]
+      ],
     },
     {
       text: '외부 서비스 연동 관리',
@@ -269,7 +269,7 @@ function sidebarGuide() {
       link: 'intro-service-status',
       collapsed: false,
     },
-  ]
+  ];
 }
 
 function sidebarReference() {
@@ -280,48 +280,58 @@ function sidebarReference() {
       items: [
         {
           text: '개요',
-          link: 'overview'
+          link: 'overview',
         },
         {
           text: '프로젝트 키 확인하기',
-          link: 'project-key'
-        }
-      ]
+          link: 'project-key',
+        },
+      ],
     },
     {
       text: '학습 커널',
       items: [
         { text: '모델 학습 환경', link: 'kernel-overview' },
         {
-          text: '학습의 시작', link: 'kernel-if-training-start',
+          text: '학습의 시작',
+          link: 'kernel-if-training-start',
           items: [
-            {text: '학습 설정 파일', link: 'kernel-if-training-start-vlad-training-json'},
-            {text: '모델 설정 파일', link: 'kernel-if-training-start-model-json'},
-            {text: '학습 데이터', link: 'kernel-if-training-start-dataset'}
-          ]
+            {
+              text: '학습 설정 파일',
+              link: 'kernel-if-training-start-vlad-training-json',
+            },
+            {
+              text: '모델 설정 파일',
+              link: 'kernel-if-training-start-model-json',
+            },
+            { text: '학습 데이터', link: 'kernel-if-training-start-dataset' },
+          ],
         },
         {
-          text: '학습의 진행', link: 'kernel-if-training-end',
+          text: '학습의 진행',
+          link: 'kernel-if-training-end',
           items: [
-            {text: '학습 상태', link: 'kernel-if-training-end-state'},
-            {text: '학습 결과', link: 'kernel-if-training-end-result'},
-          ]
+            { text: '학습 상태', link: 'kernel-if-training-end-state' },
+            { text: '학습 결과', link: 'kernel-if-training-end-result' },
+          ],
         },
         {
-          text: '검증의 진행', link: 'kernel-if-validation-end',
+          text: '검증의 진행',
+          link: 'kernel-if-validation-end',
           items: [
-            {text: '검증 상태', link: 'kernel-if-validation-end-state'},
-            {text: '검증 결과', link: 'kernel-if-validation-end-result'},
-          ]
+            { text: '검증 상태', link: 'kernel-if-validation-end-state' },
+            { text: '검증 결과', link: 'kernel-if-validation-end-result' },
+          ],
         },
         {
-          text: '학습 커널 패키징', link: 'kernel-packaging',
+          text: '학습 커널 패키징',
+          link: 'kernel-packaging',
           items: [
-            {text: '커널 파일', link: 'kernel-packaging-kernel'},
-            {text: '모델 설정 스키마', link: 'kernel-packaging-schema'},
-          ]
+            { text: '커널 파일', link: 'kernel-packaging-kernel' },
+            { text: '모델 설정 스키마', link: 'kernel-packaging-schema' },
+          ],
         },
-      ]
+      ],
     },
     {
       text: '외부 시스템 연동',
@@ -329,16 +339,16 @@ function sidebarReference() {
         { text: '개요', link: 'ext-system-integration-overview' },
         // { text: '데이터'},
         // { text: '배포'},
-      ]
-    }
-  ]
+      ],
+    },
+  ];
 }
 
 function sidebarBlog() {
   return [
     {
       text: '방문을 환영합니다',
-      link: 'hello'
+      link: 'hello',
     },
-  ]
+  ];
 }

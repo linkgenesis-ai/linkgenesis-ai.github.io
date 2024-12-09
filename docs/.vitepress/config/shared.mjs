@@ -1,10 +1,10 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress';
 
 export const shared = defineConfig({
   title: 'VLAD Ops',
 
   rewrites: {
-    'ko/:rest*': ':rest*'
+    'ko/:rest*': ':rest*',
   },
 
   lastUpdated: true,
@@ -20,10 +20,10 @@ export const shared = defineConfig({
       // We use `[!!code` in demo to prevent transformation, here we revert it back.
       {
         postprocess(code) {
-          return code.replace(/\[\!\!code/g, '[!code')
-        }
-      }
-    ]
+          return code.replace(/\[\!\!code/g, '[!code');
+        },
+      },
+    ],
   },
 
   sitemap: {
@@ -69,9 +69,8 @@ export const shared = defineConfig({
 
   themeConfig: {
     // logo: { src: '/vitepress-logo-mini.svg', width: 24, height: 24 },
-
     // socialLinks: [
     //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     // ],
-  }
-})
+  },
+});

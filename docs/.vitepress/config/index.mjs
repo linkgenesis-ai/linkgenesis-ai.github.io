@@ -1,7 +1,7 @@
-import { defineConfig } from 'vitepress'
-import { shared } from './shared.mjs'
-import { en } from './en.mjs'
-import { ko } from './ko.mjs'
+import { defineConfig } from 'vitepress';
+import { shared } from './shared.mjs';
+import { en } from './en.mjs';
+import { ko } from './ko.mjs';
 
 export default defineConfig({
   ...shared,
@@ -10,5 +10,5 @@ export default defineConfig({
     // ko: { label: '한국어', ...ko }
     root: { label: '한국어', ...ko },
     // en: { label: 'English', ...en },
-  }
-})
+  },
+});
