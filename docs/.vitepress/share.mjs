@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress';
 
-export const shared = defineConfig({
+export const shareConfig = defineConfig({
   title: 'VLAD Ops',
 
   rewrites: {
@@ -48,29 +48,23 @@ export const shared = defineConfig({
   //   ['script', { src: 'https://cdn.usefathom.com/script.js', 'data-site': 'AZBRSFGG', 'data-spa': 'auto', defer: '' }]
   // ],
   head: [
-    ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:title', content: 'VLAD Ops | Machine Learning Integrated Solutions' }],
-    ['meta', { property: 'og:site_name', content: 'VLAD Ops' }],
-    // ['meta', { property: 'og:image', content: 'https://linkgenesis-ai.github.io/ko/main-functions.png' }],
-    ['meta', { property: 'og:url', content: 'https://linkgenesis-ai.github.io/' }],
-    [
-      'script',
-      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-P6WWQXT3BW' }
+      ['meta', { property: 'og:type', content: 'website' }],
+      ['meta', { property: 'og:title', content: 'VLAD Ops | Machine Learning Integrated Solutions' }],
+      ['meta', { property: 'og:site_name', content: 'VLAD Ops' }],
+      // ['meta', { property: 'og:image', content: 'https://linkgenesis-ai.github.io/ko/main-functions.png' }],
+      ['meta', { property: 'og:url', content: 'https://linkgenesis-ai.github.io/' }],
+      [
+        'script',
+        { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-P6WWQXT3BW' }
+      ],
+      [
+        'script',
+        {},
+        `window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P6WWQXT3BW');`
+      ]
     ],
-    [
-      'script',
-      {},
-      `window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-P6WWQXT3BW');`
-    ]
-  ],
-
-  themeConfig: {
-    // logo: { src: '/vitepress-logo-mini.svg', width: 24, height: 24 },
-    // socialLinks: [
-    //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    // ],
-  },
+  themeConfig: {},
 });
