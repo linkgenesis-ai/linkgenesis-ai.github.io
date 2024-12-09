@@ -70,8 +70,8 @@ export const shareConfig = defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     blog: {
-      title: 'My AI Written Blog',
-      description: 'All these articles were written by AI!',
+      // title: 'Linkgenesis AI R&D Blog',
+      // description: '',
       defaultAuthor: 'Writer',
       categoryIcons: {
         article: 'i-[carbon/notebook]',
