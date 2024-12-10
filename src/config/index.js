@@ -27,12 +27,8 @@ export async function processData(
   }
 }
 
-export const tailwindThemeContent =
-  './node_modules/@chunge16/vitepress-blogs-theme/src/theme/**/*.{js,ts,vue}';
-
 export function defineTailwindContent(base = './docs') {
   return [
-    tailwindThemeContent,
     path.join(base, '**/*.md'),
     path.join(base, '.vitepress/**/*.{js,ts,vue}'),
   ];
