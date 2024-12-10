@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress';
-import { processData } from "../../src/config/index.js";
-import { en } from './locales/en.mjs';
-import { ko } from './locales/ko.mjs';
-import { shareConfig } from './share.mjs';
+import { processData } from '../../src/config/index.js';
+import { en } from './locales/en.js';
+import { ko } from './locales/ko.js';
+import { shareConfig } from './share.js';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
