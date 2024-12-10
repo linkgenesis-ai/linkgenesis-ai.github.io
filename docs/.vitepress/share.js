@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress';
 import { enUS } from 'date-fns/locale';
+import { keywords } from './meta.js';
 
 export const shareConfig = defineConfig({
   title: 'VLAD Ops',
@@ -34,39 +35,6 @@ export const shareConfig = defineConfig({
     //   return items.filter((item) => !item.url.includes('migration'))
     // }
   },
-
-  /* prettier-ignore */
-  // head: [
-  //   ['link', { rel: 'icon', type: 'image/svg+xml', href: '/vitepress-logo-mini.svg' }],
-  //   ['link', { rel: 'icon', type: 'image/png', href: '/vitepress-logo-mini.png' }],
-  //   ['meta', { name: 'theme-color', content: '#5f67ee' }],
-  //   ['meta', { property: 'og:type', content: 'website' }],
-  //   ['meta', { property: 'og:locale', content: 'en' }],
-  //   ['meta', { property: 'og:title', content: 'VitePress | Vite & Vue Powered Static Site Generator' }],
-  //   ['meta', { property: 'og:site_name', content: 'VitePress' }],
-  //   ['meta', { property: 'og:image', content: 'https://vitepress.dev/vitepress-og.jpg' }],
-  //   ['meta', { property: 'og:url', content: 'https://vitepress.dev/' }],
-  //   ['script', { src: 'https://cdn.usefathom.com/script.js', 'data-site': 'AZBRSFGG', 'data-spa': 'auto', defer: '' }]
-  // ],
-  head: [
-      ['meta', { property: 'og:type', content: 'website' }],
-      ['meta', { property: 'og:title', content: 'VLAD Ops | Machine Learning Integrated Solutions' }],
-      ['meta', { property: 'og:site_name', content: 'VLAD Ops' }],
-      // ['meta', { property: 'og:image', content: 'https://linkgenesis-ai.github.io/ko/main-functions.png' }],
-      ['meta', { property: 'og:url', content: 'https://linkgenesis-ai.github.io/' }],
-      [
-        'script',
-        { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-P6WWQXT3BW' }
-      ],
-      [
-        'script',
-        {},
-        `window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-P6WWQXT3BW');`
-      ]
-    ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     blog: {
@@ -101,6 +69,31 @@ export const shareConfig = defineConfig({
         defaultEnable: false,
       },
     },
-    // https://vitepress.dev/reference/default-theme-config
   },
+  head: [
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:site_name', content: 'VLAD Ops' }],
+    [
+      'meta',
+      { name: 'apple-mobile-web-app-status-bar-style', content: 'default' },
+    ],
+    ['meta', { name: 'keywords', content: keywords }],
+    // ['meta', { property: 'og:image', content: 'https://linkgenesis-ai.github.io/ko/main-functions.png' }],
+    // ['meta', { property: 'og:url', content: 'https://linkgenesis-ai.github.io/' }],
+    [
+      'script',
+      {
+        async: '',
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-P6WWQXT3BW',
+      },
+    ],
+    [
+      'script',
+      {},
+      `window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P6WWQXT3BW');`,
+    ],
+  ],
 });

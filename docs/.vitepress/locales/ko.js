@@ -1,8 +1,9 @@
 import { defineConfig } from 'vitepress';
+import { siteUrlKO, titleKO, descriptionKO } from '../meta.js';
 
 export const ko = defineConfig({
   lang: 'ko-KR',
-  description: 'Vite 및 Vue 기반 정적 사이트 생성기.',
+  description: descriptionKO,
 
   themeConfig: {
     nav: nav(),
@@ -43,6 +44,19 @@ export const ko = defineConfig({
     lightModeSwitchTitle: '라이트 모드로 변경',
     darkModeSwitchTitle: '다크 모드로 변경',
   },
+  head: [
+    ['meta', { property: 'og:title', content: titleKO }],
+    ['meta', { property: 'og:description', content: descriptionKO }],
+    ['meta', { property: 'og:url', content: siteUrlKO }],
+    ['meta', { property: 'og:locale', content: 'ko_KR' }],
+    [
+      'meta',
+      {
+        name: 'apple-mobile-web-app-title',
+        content: titleKO,
+      },
+    ],
+  ],
 });
 
 function nav() {
@@ -61,16 +75,16 @@ function nav() {
       text: '블로그',
       activeMatch: '/blog/',
       items: [
-          {
-              text: 'Blog Home',
-              link: '/blog/',
-              activeMatch: '/blog/$',
-          },
-          {
-              text: 'Archives',
-              link: '/blog/archives',
-              activeMatch: '/blog/archives',
-          },
+        {
+          text: 'Blog Home',
+          link: '/blog/',
+          activeMatch: '/blog/$',
+        },
+        {
+          text: 'Archives',
+          link: '/blog/archives',
+          activeMatch: '/blog/archives',
+        },
       ],
     },
   ];

@@ -1,8 +1,9 @@
 import { defineConfig } from 'vitepress';
+import { siteUrlEN, titleEN, descriptionEN } from '../meta.js';
 
 export const en = defineConfig({
   lang: 'en-US',
-  description: 'Vite & Vue powered static site generator.',
+  description: descriptionEN,
 
   themeConfig: {
     nav: nav(),
@@ -22,6 +23,19 @@ export const en = defineConfig({
     //   copyright: 'Copyright © 2019-present Evan You'
     // }
   },
+  head: [
+    ['meta', { property: 'og:title', content: titleEN }],
+    ['meta', { property: 'og:description', content: descriptionEN }],
+    ['meta', { property: 'og:url', content: siteUrlEN }],
+    ['meta', { property: 'og:locale', content: 'en_US' }],
+    [
+      'meta',
+      {
+        name: 'apple-mobile-web-app-title',
+        content: titleEN,
+      },
+    ],
+  ],
 });
 
 function nav() {
@@ -36,6 +50,22 @@ function nav() {
     //   link: '/en/reference/introduction',
     //   activeMatch: '/en/reference/'
     // },
+    {
+      text: 'Blog',
+      activeMatch: '/en/blog/',
+      items: [
+        {
+          text: 'Blog Home',
+          link: '/en/blog/',
+          activeMatch: '/en/blog/$',
+        },
+        {
+          text: 'Archives',
+          link: '/en/blog/archives',
+          activeMatch: '/en/blog/archives',
+        },
+      ],
+    },
   ];
 }
 

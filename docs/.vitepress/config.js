@@ -9,7 +9,7 @@ export default defineConfig({
   ...shareConfig,
   locales: {
     root: { label: '한국어', ...ko },
-    // en: { label: 'English', ...en },
+    en: { label: 'English', ...en },
   },
   async transformPageData(pageData, ctx) {
     await processData(pageData, ctx);
