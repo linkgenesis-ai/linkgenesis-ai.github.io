@@ -1,0 +1,5 @@
+# Allow All
+User-agent: *
+Allow: /
+
+Sitemap: https://linkgenesis-ai.github.io/sitemap.xml
