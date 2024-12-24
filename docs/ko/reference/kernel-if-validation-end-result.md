@@ -13,17 +13,58 @@ outline: deep
 검증 결과를 플랫폼에서 확인하려면 지정된 위치에 결과를 저장해야 합니다.
 
 ## 결과 저장 위치
+- 어노테이션 정보, 리포트
 
-학습 설정 파일의 `model_write_path` 에서 결과 저장 폴더를 확인 할 수 있으며, 해당 폴더에 규칙에 맞춰 결과를 생성합니다.
+  학습 설정 파일의 `model_write_path` 에 저장해야 합니다.  
+  해당 경로에 규칙에 맞춰 결과를 생성하면 플랫폼내에서 결과를 확인할 수 있습니다.
 
-## 공통 테이블 결과물
+- 이미지
+
+  검증결과로 이미지가 생성되는 경우 학습 설정 파일의 `image_write_path` 에 저장해야 합니다.
+
+## 리포트 결과물
 결과 저장 위치 루트에 CSV 파일을 생성하면 플랫폼 화면에 테이블로 표시됩니다.
 
 테이블이 표시되는 순서는 `summary.csv`, `confusion.csv` 가 최 상단에 표시되고, 나머지는 파일명의 abc 순으로 표시됩니다.
 
 테이블로 표시하기에는 너무 많은 데이터가 검증 결과로 생성되는 경우에는 서브 폴더를 만들어서 넣어두면 해당 파일들은 다운로드를 통해 확인할 수 있습니다.
 
-## 학습 타입별 결과물
+## 이미지 결과물
+검증결과로 이미지가 생성되는 경우 `image_write_path` 에 저장하고 `model_write_path/files.txt` 파일에 생성된 이미지 목록을 제공해야 합니다.
+
+다음은 files.txt 예시이며 `/mnt/validation/output_image` 는 검증 실행시 `image_write_path`로 전달되는 경로입니다.
+```
+cat files.txt 
+/mnt/validation/output_image/NAS01/image/1/2/L_VALVE_1/2024/1223/02/S7034902813506310181_20241217074352_THERMOSTATIC_VALVE_R_0_A.png
+/mnt/validation/output_image/NAS01/image/1/2/L_VALVE_1/2024/1223/02/S7034902813506310181_20241217074352_THERMOSTATIC_VALVE_L_0_A.png
+/mnt/validation/output_image/NAS01/image/1/2/L_VALVE_1/2024/1223/02/S7034902813506310181_20241217074352_THERMOSTATIC_VALVE_R_0_A.png
+/mnt/validation/output_image/NAS01/image/1/2/L_VALVE_1/2024/1223/02/S7034902813506310181_20241217074352_THERMOSTATIC_VALVE_L_0_A.png
+```
+
+## 동작 타입별 구분
+검증 동작은 `validation`, `inference`, `preprocessing` 으로 구분됩니다.
+
+- validation : 학습된 모델을 검증하기 위해 사용되며 다양한 리포트 데이터를 결과로 제공할 수 있습니다.
+- inference : 학습된 모델을 통해 새로운 어노테이션을 생성합니다. (auto labeling 기능)
+- preprocessing : 전달된 이미지를 전처리할 수 있습니다.
+
+### Input / Output
+
+operation |  커널에 전달되는 데이터 | 커널에서 생성하는 데이터
+--|--|--
+validation | annotaion files | annotaion files, csv files, image files(옵션)
+inference | files.txt(라인으로 구분된 이미지 경로) | annotaion files
+preprocessing | files.txt(라인으로 구분된 이미지 경로) | image files
+
+### 커널 결과로 생성되는 데이터셋의 데이터
+
+operation |  이미지 | 어노테이션
+--|--|--
+validation | 원본 이미지, 커널에서 이미지를 생성했으면 생성 이미지 사용 | 원본 어노테이션 + 결과 어노테이션
+inference | 원본 이미지 | 결과 어노테이션
+preprocessing | 생성 이미지 | 없음
+
+## 학습 타입별 구분
 검증 결과는 `training type` 에 따라 다른 결과를 가지는데, 각 타입별 필수적인 결과물은 아래와 같습니다.
 
 ### Classification (CL)
