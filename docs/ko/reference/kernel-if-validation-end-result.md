@@ -30,15 +30,21 @@ outline: deep
 테이블로 표시하기에는 너무 많은 데이터가 검증 결과로 생성되는 경우에는 서브 폴더를 만들어서 넣어두면 해당 파일들은 다운로드를 통해 확인할 수 있습니다.
 
 ## 이미지 결과물
-검증결과로 이미지가 생성되는 경우 `image_write_path` 에 저장하고 `model_write_path/files.txt` 파일에 생성된 이미지 목록을 제공해야 합니다.
+검증결과로 이미지가 생성되는 경우 `image_write_path` 에 저장하고 `model_write_path/files.txt` 파일에 이미지 매핑 정보를 제공해야 합니다.
 
-다음은 files.txt 예시이며 `/mnt/validation/output_image` 는 검증 실행시 `image_write_path`로 전달되는 경로입니다.
+다음은 `model_write_path/files.txt` 예시입니다.
 ```
 cat files.txt 
-/mnt/validation/output_image/NAS01/image/1/2/L_VALVE_1/2024/1223/02/S7034902813506310181_20241217074352_THERMOSTATIC_VALVE_R_0_A.png
-/mnt/validation/output_image/NAS01/image/1/2/L_VALVE_1/2024/1223/02/S7034902813506310181_20241217074352_THERMOSTATIC_VALVE_L_0_A.png
-/mnt/validation/output_image/NAS01/image/1/2/L_VALVE_1/2024/1223/02/S7034902813506310181_20241217074352_THERMOSTATIC_VALVE_R_0_A.png
-/mnt/validation/output_image/NAS01/image/1/2/L_VALVE_1/2024/1223/02/S7034902813506310181_20241217074352_THERMOSTATIC_VALVE_L_0_A.png
+[
+  {
+    "src": "/mnt/image/NAS01/image/1/2/L_VALVE_1/2024/1227/01/S5421E45626133463036_THERMOSTATIC_VALVE_L_0_A.png",
+    "dst": "/mnt/validation/output_image/NAS01/image/1/2/L_VALVE_1/2024/1227/01/S5421E45626133463036_THERMOSTATIC_VALVE_L_0_A.png"
+  },
+  {
+    "src": "/mnt/image/NAS01/image/1/2/L_VALVE_1/2024/1227/01/S5421E45626133463036_THERMOSTATIC_VALVE_R_0_A.png",
+    "dst": "/mnt/validation/output_image/NAS01/image/1/2/L_VALVE_1/2024/1227/01/S5421E45626133463036_THERMOSTATIC_VALVE_R_0_A.png"
+  }
+]
 ```
 
 ## 동작 타입별 구분
