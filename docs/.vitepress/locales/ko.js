@@ -236,6 +236,21 @@ function sidebarGuide() {
         {
           text: '어노테이션 작성',
           link: 'labeling-create',
+          collapsed: false,
+          items: [
+            {
+              text: '사용자 직접 작성',
+              link: 'labeling-create-user-draw',
+            },
+            {
+              text: '실시간 추론 결과 사용',
+              link: 'labeling-create-live-inference',
+            },
+            {
+              text: '자동 영역 추론 결과 사용',
+              link: 'labeling-create-area-inference',
+            },
+          ],
         },
         {
           text: '어노테이션 수정',
