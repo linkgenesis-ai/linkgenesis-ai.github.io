@@ -185,17 +185,6 @@ function sidebarGuide() {
         {
           text: '데이터 가져오기',
           link: 'dataset-import',
-          collapsed: false,
-          items: [
-            {
-              text: '외부 도구 데이터',
-              link: 'dataset-import-external',
-            },
-            {
-              text: 'Vlad Ops 데이터',
-              link: 'dataset-import-vladops',
-            },
-          ],
         },
         {
           text: '데이터셋 관리',
