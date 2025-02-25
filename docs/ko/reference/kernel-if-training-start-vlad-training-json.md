@@ -26,6 +26,7 @@ outline: deep
   "operation": "train | validation",
   "dataset_path": "/mnt/path_to_dataset",
   "temp_path": "/mnt/path_to_temp_directory",
+  "etc_path": "/mnt/model/etc",
   "base_model_path": "mnt/path_to_base_model",
   "model_write_path": "/mnt/path_to_write_model",
   "message_host": "host_name",
@@ -46,6 +47,7 @@ outline: deep
 | `operation`            | `training` or `validation`의 값으로, `training`을 수행해야 하는지 `validation`을 수행해야 하는지 지정되어 있음 |
 | `dataset_path`         | 데이터셋이 저장되어 있는 path. 이 path의 내용은 실제 학습의 종류(레이블의 종류)에 따라 다름. 학습의 종류는 `model.json`의 `training_type` field를 통해 전달됨 |
 | `temp_path`            | 학습이나 검증 과정에 사용되는 임시 파일들을 저장할 경로. 컨테이너가 종료되면 이 경로에 있는 파일들도 삭제됨 |
+| `etc_path`             | 커널에 전달된 `추가 설정 파일`이 저장된 폴더 위치 |
 | `base_model_path`      | 추가 학습의 경우, 사용될 base model의 경로가 지정됨. 폴더 구조는 학습의 결과로 생성되는 모델의 폴더와 동일 |
 | `model_write_path`     | 학습의 결과, 혹은 검증의 결과가 저장될 폴더의 위치 |
 | `message_host/port/id/pw` | RabbitMQ message를 전달할 host/port/id/pw |
