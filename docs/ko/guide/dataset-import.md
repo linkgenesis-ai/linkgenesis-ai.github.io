@@ -15,8 +15,8 @@ outline: deep
 
   | | LabelMe (json) | LabelMe (xml) | Pascal VOC |
   | :---: | :---: | :---: | :---: |
-  | 파일 형식 | json | xml | xml |
   | 사용 도구 | labelme | cvat | labelimg |
+  | 파일 형식 | json | xml | xml |
   | 지원하는 shape 종류 | rectangle, polygon | rectangle, polygon | rectangle |
 
 
@@ -24,7 +24,7 @@ outline: deep
 업로드 할 파일을 선택합니다.  
 
 - 이미지 압축 파일 (필수)  
-이미지 압축 파일은 zip 또는 tar 형식으로 압축되어야 하고, 아래와 같이 구성되어야 합니다.  
+이미지 압축 파일은 zip 또는 tar 형식을 지원하며, 아래와 같이 구성되어야 합니다.  
 ```
 [예시 : 가져오려는 이미지 압축 파일(images.zip)의 구성]
 images.zip
@@ -35,10 +35,20 @@ images.zip
 ```
 
 - 이미지 메타 파일 (필수)  
-이미지 메타 파일은 csv 형식으로 작성되어야 하고,  
-[이미지 메타 데이터 설정](./project-settings-image-meta)에서 추가한 메타 정보가 포함되어야 합니다.
+이미지 메타 파일은 csv, zip, tar 형식을 지원하며, 아래와 같이 구성되어야 합니다.
+
+::: warning 주의
+이미지 메타 파일은 csv 형식으로 작성되어야 하며,  
+[이미지 메타 데이터 설정](./project-settings-image-meta)에서 추가한 메타 정보 중 필수항목을 포함해야 합니다.
+:::
+
 ```
-[예시 : 가져오려는 이미지 메타 파일(meta.csv)의 구성]
+[예시 : 가져오려는 이미지 메타 파일(meta.zip)의 구성]
+meta.zip
+└─ meta.csv
+```
+```
+[예시 : 이미지 메타 파일(meta.csv)의 구성]
 acq_dt,image_type,prod_id,judge_rslt,org_id,obj_id,image_file_nm
 2024-09-12 15:53:35,FRONT,P01,OK,LINE01,0,image_01.png
 2024-09-12 15:58:05,SIDE,P01,OK,LINE01,0,image_02.png
@@ -46,8 +56,11 @@ acq_dt,image_type,prod_id,judge_rslt,org_id,obj_id,image_file_nm
 ```
 
 - 어노테이션 압축 파일 (선택)  
-어노테이션 압축 파일은 zip 또는 tar 형식으로 압축되어야 하고,  
-어노테이션 파일명은 이미지 파일명과 동일하게 작성되어야 합니다.
+어노테이션 압축 파일은 zip 또는 tar 형식을 지원하며, 아래와 같이 구성되어야 합니다.
+
+::: warning 주의
+SEG 또는 OD Type 어노테이션 정보 파일명은 이미지 파일명과 동일하게 작성되어야 합니다.
+:::
 
   ```
   [예시 : 가져오려는 어노테이션 압축 파일(annotations.zip)의 구성]
@@ -89,7 +102,7 @@ acq_dt,image_type,prod_id,judge_rslt,org_id,obj_id,image_file_nm
   THERMOSTATIC_VALVE_04_R_0_A.png RC_TEST true 278 168 29 28
   ```
   ```
-  [예시 : 어노테이션 파일(image_01.xml)의 구성]
+  [예시 : SEG 또는 OD Type 어노테이션 정보 파일(image_01.xml)의 구성]
   <annotation>
     <filename>image_01.png</filename>
     <folder/>
