@@ -14,7 +14,7 @@ ECCV 2020에서 발표된 DETR(End-to-End Object Detection with Transformers) �
 위 논문 리뷰 내용을 정리한 자료를 첨부합니다.
 
 
-[DETR 논문 리뷰 자료 링크](./detr_paper_review.pdf)
+[DETR 논문 리뷰 자료 링크](/blog-data/detr_paper_review.pdf)
 
 
 주요 내용:
