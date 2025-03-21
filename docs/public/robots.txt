@@ -1,5 +1,5 @@
-# Allow All
 User-agent: *
+Disallow: /assets/
 Allow: /
 
 Sitemap: https://linkgenesis-ai.github.io/sitemap.xml
