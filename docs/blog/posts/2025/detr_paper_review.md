@@ -24,7 +24,7 @@ DETR은 기존 NLP 테스크에서 주로 사용되던 Transformer 구조를 Obj
 <br/>
 
 ## Transformer for NLP task vs DETR Transformer
-![트랜스포머 구조 비교](/docs/public/blog-data/comparison_transformer_architecture.png)
+![트랜스포머 구조 비교](/blog-data/comparison_transformer_architecture.png)
 
 NLP 테스크에서 사용되는 트랜스포머 구조와 DETR(Detection Transformer)의 가장 큰 차이점은 Self-Attention과 Object Query의 유무입니다.
 기존 NLP 트랜스포머에서는 포함되어 있지 않은 Self-Attention 방식과 Object Query 개념이 DETR 구조에서 중요한 요소로 자리 잡고 있습니다.
@@ -67,7 +67,7 @@ Object Query는 Object Query Features, Object Query Positional Embedding (위치
 
 ## Set Prediction Loss
 
-![loss 함수 비교1](/docs/public/blog-data/set_prediction_loss1.png)
+![loss 함수 비교1](/blog-data/set_prediction_loss1.png)
 
 𝑁 == object query의 지정된 예측 개수(논문에서는 100개로 set)<br/>
 𝑐𝑖 == ground truth class<br/>
@@ -77,7 +77,7 @@ Object Query는 Object Query Features, Object Query Positional Embedding (위치
 <br/>
 <br/>
 
-![loss 함수 비교2](/docs/public/blog-data/set_prediction_loss2.png)
+![loss 함수 비교2](/blog-data/set_prediction_loss2.png)
 
 DETR 모델은 box loss 계산을 위하여 GIoU와 L1 loss의 조합을 사용합니다.
 ### GIoU + L1 loss:
@@ -100,7 +100,7 @@ DETR 모델은 box loss 계산을 위하여 GIoU와 L1 loss의 조합을 사용�
 
 아래는 논문에서 발췌한 모델별 추론 성능표입니다. 논문에서 비교가 된 Faster RCNN의 경우도 함께 적혀있으니 참고하시면 좋을 것 같습니다.
 
-![추론 비용](/docs/public/blog-data/model_train_cost.png)
+![추론 비용](/blog-data/model_train_cost.png)
 
 ### 메인 코드 및 모델 다운로드:
   - https://github.com/facebookresearch/detr
