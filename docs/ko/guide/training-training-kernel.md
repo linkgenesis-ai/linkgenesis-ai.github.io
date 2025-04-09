@@ -15,7 +15,7 @@ outline: deep
 - docker 이미지를 저장한 파일(tar) 또는 build 할 수 있는 소스 코드를 압축한 파일(zip, tar)
 - 학습 커널의 구성을 정의하는 모델 설정 스키마 파일(json)  
 
-학습 커널 만들기에 대해 궁금하시면 [여기](/ko/reference/kernel-overview)를 클릭하세요.
+학습 커널 만들기에 대해 궁금하시면 [여기](/reference/kernel-overview)를 클릭하세요.
 :::
 
 ::: info 커널 업로드

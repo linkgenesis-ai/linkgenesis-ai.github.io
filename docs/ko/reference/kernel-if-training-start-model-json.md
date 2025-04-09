@@ -11,7 +11,7 @@ outline: deep
 ::: info
 모델 설정 파일의 데이터는 학습 커널 개발시 작성하는 모델 설정 스키마를 만족하는 데이터입니다.
 
-각 항목 상세 내용은 [모델 설정 스키마](/ko/reference/kernel-packaging-schema)를 참고하시기 바랍니다.
+각 항목 상세 내용은 [모델 설정 스키마](/reference/kernel-packaging-schema)를 참고하시기 바랍니다.
 :::
 
 
