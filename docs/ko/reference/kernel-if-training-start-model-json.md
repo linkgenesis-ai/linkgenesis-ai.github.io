@@ -18,7 +18,7 @@ outline: deep
 모델 설정 파일 예
 ```json
 {
-    "image_type_list": [
+    "trainable_image_type": [
       "_A.png",
       "_X.png"
     ],

@@ -72,7 +72,7 @@ minimum, maximum 값에 따라 학습시 플랫폼 UI에서 gpu 갯수를 선택
 }
 ```
 
-### image_type_list
+### trainable_image_type
 
 접근 가능한 이미지 종류(xy, albedo ...)의 목록입니다. 값은 string arrary 형태를 가지며, 그 값은 기본정보의 프로젝트 환경의 학습 가능한 이미지 종류(TRAINABLE_IMAGE_TYPE) 에 있는 항목들의 열거입니다.
 
@@ -81,7 +81,7 @@ minimum, maximum 값에 따라 학습시 플랫폼 UI에서 gpu 갯수를 선택
 ~~학습 커널에서는 자신이 학습한 image type을 onnx 파일의 메타 데이터에 저장하여, edge에서 어떤 type의 image를 feeding할 지 결정할수 있도록 해 주어야 합니다.~~
 
 ```
-"image_type_list": ["_A.png", "_X.png", "_CH1.png", "_CH2.png"]
+"trainable_image_type": ["_A.png", "_X.png", "_CH1.png", "_CH2.png"]
 ```
 
 ### batchable_params
@@ -157,7 +157,7 @@ training_params 에 정의되어 있는 항목중 영역 스캔이 필요하거�
       ],
       "additionalProperties": false
     },
-    "image_type_list": {
+    "trainable_image_type": {
       "type": "array",
       "items": {
         "type": "string"
