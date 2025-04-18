@@ -31,7 +31,7 @@ outline: deep
       <th>prod_id</th>
       <th>judge_rslt</th>
       <th>org_id</th>
-      <th>image_file_nm</th>
+      <th>data_file_nm</th>
       <th>...</th>
     </tr>
   </thead>
@@ -69,7 +69,7 @@ image02.png 파일의 judge_rslt 가 `OK`, org_id 가 `LINE01` 로 잘못 등록
       <th>prod_id</th>
       <th>judge_rslt</th>
       <th>org_id</th>
-      <th>image_file_nm</th>
+      <th>data_file_nm</th>
       <th>...</th>
     </tr>
   </thead>

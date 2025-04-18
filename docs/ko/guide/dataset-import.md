@@ -49,7 +49,7 @@ meta.zip
 ```
 ```
 [예시 : 이미지 메타 파일(meta.csv)의 구성]
-acq_dt,image_type,prod_id,judge_rslt,org_id,obj_id,image_file_nm
+acq_dt,image_type,prod_id,judge_rslt,org_id,obj_id,data_file_nm
 2024-09-12 15:53:35,FRONT,P01,OK,LINE01,0,image_01.png
 2024-09-12 15:58:05,SIDE,P01,OK,LINE01,0,image_02.png
 ...
