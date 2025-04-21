@@ -14,7 +14,7 @@ outline: deep
 ::: info 필수 항목
 - 획득 일자 (acq_dt) : 이미지 획득 일자
 - 데이터 파일명 (data_file_nm) : 데이터 파일 이름
-- 이미지 타입 (image_type) : 이미지 타입 (예: 정면, 측면)
+- 데이터 카테고리 (data_cate) : 데이터 카테고리 (예: 정면, 측면)
 - 출처 (org_id) : 이미지 출처 (예: 라인1, 라인2)
 - 목적물 (obj_id) : 개체 ID
 - 제품 ID (prod_id) : 제품 ID

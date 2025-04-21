@@ -14,9 +14,9 @@ outline: deep
 모델이 지원하는 어노테이션 타입을 설정합니다.  
 ([어노테이션 타입 설정](./project-settings-annotation-type) 에서 추가한 항목 중 선택)
 
-### 이미지 타입
-모델이 지원하는 이미지 타입을 설정합니다.  
-([이미지 메타 데이터 설정](./project-settings-image-meta) 의 image_type 에서 추가한 항목 중 선택)
+### 데이터 카테고리
+모델이 지원하는 데이터 카테고리를 설정합니다.  
+([이미지 메타 데이터 설정](./project-settings-image-meta) 의 data_cate 에서 추가한 항목 중 선택)
 
 ### ROI (Region of Interest) 타입
 모델의 레이블링 유형이 SEG 또는 OD 인 경우, 모델이 지원하는 ROI 타입을 설정합니다.  
