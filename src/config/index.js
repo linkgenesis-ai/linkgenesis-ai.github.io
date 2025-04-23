@@ -27,16 +27,16 @@ export async function processData(
   }
 }
 
-export function defineTailwindContent(base = './docs') {
+export function defineTailwindContent(base = './docs_src') {
   return [
     path.join(base, '**/*.md'),
     path.join(base, '.vitepress/**/*.{js,ts,vue}'),
   ];
 }
 
-export function defineTailwindConfig(base = './docs', config) {
+export function defineTailwindConfig(base = './docs_src', config) {
   if (base === null || base === undefined) {
-    base = './docs';
+    base = './docs_src';
   }
   return {
     darkMode: 'class',

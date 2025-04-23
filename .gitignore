@@ -2,5 +2,5 @@ node_modules
 .DS_Store
 
 # Vitepress
-docs/.vitepress/dist
-docs/.vitepress/cache
+docs_src/.vitepress/dist
+docs_src/.vitepress/cache
