@@ -1,11 +1,11 @@
 # VLAD Ops 사이트를 GitHub Pages에 빌드하고 배포하는 워크플로우
 #
-# name: VLAD Ops Docs
-# on:
-#   # `main` 브랜치를 대상으로 하는 푸시에서 실행됩니다.
-#   push:
-#     branches: [main]
+name: VLAD Ops Docs
 
+on:
+  # `main` 브랜치를 대상으로 하는 푸시에서 실행됩니다.
+  push:
+    branches: [main]
 #   # Actions 탭에서 이 워크플로우를 수동으로 실행할 수 있게 합니다.
 #   workflow_dispatch:
 
